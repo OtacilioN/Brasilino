@@ -10,5 +10,43 @@
 #ifndef Brasilino_h
 #define Brasilino_h
 
-
 #endif
+
+#define definir define
+
+//------------------Argumentos Lógicos---------------------
+#define ENTRADA INPUT
+#define SAIDA OUTPUT
+#define ALTO HIGH
+#define BAIXO LOW
+#define verdadeiro true
+#define falso false
+
+//------------------Tipos de variáveis---------------------
+#define nulo void
+#define inteiro	int
+#define decimal float 
+#define dobro double
+#define caracter char
+#define logico boolean
+
+//------------------Laços Lógicos---------------------
+#define se if
+#define caso switch
+#define sair break
+
+//------------------Laços de Repetição---------------------
+#define enquanto while
+#define para for
+
+//------------------Funções---------------------
+#define imprimir print
+#define imprimirLinha println
+#define iniciar begin
+
+#define escrever write
+#define ler read
+
+//------------------Funções Principais---------------------
+#define esperar(int tempo) delay(int tempo)
+
