@@ -1,5 +1,3 @@
-#include <Brasilino.h>
-
 /*
     Piscar
     Liga um LED por um segundo, depois desliga-o, repetidamente.
@@ -12,6 +10,10 @@
     
     Este exemplo é baseado no exemplo Blink do Arduino.
 */    
+
+
+#include <Brasilino.h>
+
 
 // A funcao configurar executa uma vez quando a placa é ligada ou quando o botão de reset é pressionado.
 funcao configurar(){
