@@ -22,6 +22,7 @@
 
 //------------------Tipos de variáveis---------------------
 #define nulo void
+#define funcao void
 #define inteiro	int
 #define decimal float 
 #define dobro double
@@ -31,12 +32,10 @@
 //------------------Laços Lógicos---------------------
 #define se if
 #define caso switch
-#define sair break
-
 //------------------Laços de Repetição---------------------
 #define enquanto while
 #define para for
-
+#define sair break
 //------------------Funções---------------------
 #define imprimir print
 #define imprimirLinha println
@@ -44,9 +43,11 @@
 
 #define escrever write
 #define ler read
+#define esperar(tempo) delay(tempo*1000)
 
 //------------------Funções Principais---------------------
-#define esperar(tempo) delay(tempo*1000)
+#define configurar setup
+#define repetir loop
 
 //------------------Funções de Serial----------------------
 #ifndef BAUD
