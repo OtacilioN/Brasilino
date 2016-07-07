@@ -12,3 +12,16 @@
     
     Este exemplo é baseado no exemplo Blink do Arduino.
 */    
+
+// A funcao configurar executa uma vez quando a placa é ligada ou quando o botão de reset é pressionado.
+funcao configurar(){
+    // Inicializa o pino digital 13 como saida.
+    saida(13);
+}
+
+funcao repetir(){
+    ligar(13); // Liga o led conectado ao pino 13
+    esperar(1); // Espera por um segundo
+    desligar(13); // Desliga o led contectado ao pino 13
+    esperar(1); // Espera um segundo
+}

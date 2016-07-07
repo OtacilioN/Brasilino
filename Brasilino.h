@@ -43,11 +43,21 @@
 
 #define escrever write
 #define ler read
+
 #define esperar(tempo) delay(tempo*1000)
+
+//------------------Funções de Comando---------------------
+#define ligar(x) digitalWrite(x, HIGH)
+#define desligar(x) digitalWrite(x, LOW)
 
 //------------------Funções Principais---------------------
 #define configurar setup
 #define repetir loop
+
+//------------------Funções de Configuração----------------
+#define saida(x) pinMode(x, OUTPUT)
+#define entrada(x) pinMode(x, INPUT)
+#define definirPino(x, y) pinMode(x, y)
 
 //------------------Funções de Serial----------------------
 #ifndef BAUD
