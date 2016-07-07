@@ -29,6 +29,6 @@ funcao repetir(){
     inteiro valorDoSensor = lerAnalogigo(A0); 
     // Escreve no SerialMonitor o valor armazenado na variável do tipo inteiro.
     escreverSerialn(valorDoSensor); 
-    esperar(0.5) // espera meio segundo
+    esperar(0.5); // espera meio segundo
     
 }
