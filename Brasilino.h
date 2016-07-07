@@ -54,4 +54,4 @@
 
 #endif
 
-// Não apagar antes disto
+// Não apagar antes disto.
