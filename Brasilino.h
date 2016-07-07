@@ -75,8 +75,8 @@
 #endif
 
 #define lerSerial() Serial.read()
-#define escreverSerialn() Serial.println()
-#define escreverSerial() Serial.print()
+#define escreverSerialn(x) Serial.println(x)
+#define escreverSerial(x) Serial.print(x)
 
 
 #endif
