@@ -1,0 +1,53 @@
+#######################################
+# Sintaxe de cores do Brasilino
+#######################################
+
+#######################################
+# Tipos de Dados (KEYWORD1)
+#######################################
+
+nulo    KEYWORD1
+funcao  KEYWORD1
+inteiro KEYWORD1
+decimal KEYWORD1
+dobro   KEYWORD1
+caracter    KEYWORD1
+logico  KEYWORD1
+
+#######################################
+# Métodos e Funções (KEYWORD2)
+#######################################
+se  KEYWORD2
+caso    KEYWORD2
+
+enquanto    KEYWORD2
+para    KEYWORD2
+sair    KEYWORD2
+
+imprimir    KEYWORD2
+imprimirLinha   KEYWORD2
+iniciar KEYWORD2
+
+escrever    KEYWORD2
+ler KEYWORD2
+esperar KEYWORD2
+
+ligar   KEYWORD2
+desligar    KEYWORD2
+
+    
+funcao  KEYWORD2
+configurar  KEYWORD2
+repetir KEYWORD2
+
+saida   KEYWORD2
+entrada KEYWORD2
+definirPino KEYWORD2
+
+lerSerial   KEYWORD2
+escreverSerialn KEYWORD2
+
+
+#######################################
+# Constante (LITERAL1)
+#######################################
