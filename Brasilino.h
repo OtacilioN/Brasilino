@@ -50,6 +50,12 @@
 #define ligar(x) digitalWrite(x, HIGH)
 #define desligar(x) digitalWrite(x, LOW)
 
+#define escreverAnalogico(x, y) analogWrite(x, y)
+#define escreverDigital(x, y) digitalWrite(x, y)
+
+#define lerDigital(x) digitalRead(x)
+#define lerAnalogigo(x) analogRead(x)
+
 //------------------Funções Principais---------------------
 #define configurar setup
 #define repetir loop
@@ -70,6 +76,7 @@
 
 #define lerSerial() Serial.read()
 #define escreverSerialn() Serial.println()
+#define escreverSerial() Serial.print()
 
 
 #endif

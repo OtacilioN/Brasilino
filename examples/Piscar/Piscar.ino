@@ -11,7 +11,7 @@
     Este exemplo é baseado no exemplo Blink do Arduino.
 */    
 
-
+// Inclue a biblioteca Brasilino
 #include <Brasilino.h>
 
 
@@ -21,6 +21,7 @@ funcao configurar(){
     saida(13);
 }
 
+// A funcao repetir executa para sempre.
 funcao repetir(){
     ligar(13); // Liga o led conectado ao pino 13
     esperar(1); // Espera por um segundo
