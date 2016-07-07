@@ -1,4 +1,3 @@
-
 /*
 	Brasilino.h - Programe em PT-BR.
 	Esta biblioteca insere uma série de facilitações e permite programar em linguagem Arduino utilizando como lingua nativa o português do Brasil.
@@ -11,6 +10,7 @@
 #define Brasilino_h
 
 #define definir define
+#define usar define
 
 //------------------Argumentos Lógicos---------------------
 #define ENTRADA INPUT
@@ -47,9 +47,18 @@
 
 //------------------Funções Principais---------------------
 #define esperar(tempo) delay(tempo*1000)
-#define lerSerial() Serial.read()
-#define escreverSerial() Serial.write()
 
+//------------------Funções de Serial----------------------
+#ifndef BAUD
+	#define iniciarSerial() Serial.begin(9600)
+#endif
+
+#ifdef BAUD
+	#define iniciarSerial(baud) Serial.begin(baud)
+#endif
+
+#define lerSerial() Serial.read()
+#define escreverSerialn() Serial.println()
 
 
 #endif
