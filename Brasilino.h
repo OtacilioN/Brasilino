@@ -10,8 +10,6 @@
 #ifndef Brasilino_h
 #define Brasilino_h
 
-#endif
-
 #define definir define
 
 //------------------Argumentos Lógicos---------------------
@@ -48,5 +46,12 @@
 #define ler read
 
 //------------------Funções Principais---------------------
-#define esperar(int tempo) delay(int tempo)
+#define esperar(tempo) delay(tempo*1000)
+#define lerSerial() Serial.read()
+#define escreverSerial() Serial.write()
 
+
+
+#endif
+
+// Não apagar antes disto
