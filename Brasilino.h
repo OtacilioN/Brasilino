@@ -51,23 +51,23 @@
 #define esperarMili(tempo) delay(tempo)
 
 //------------------Funções de Comando---------------------
-#define ligar(x) digitalWrite(x, HIGH)
-#define desligar(x) digitalWrite(x, LOW)
+#define ligar(pino) digitalWrite(pino, HIGH)
+#define desligar(pino) digitalWrite(pino, LOW)
 
-#define escreverAnalogico(x, y) analogWrite(x, y)
-#define escreverDigital(x, y) digitalWrite(x, y)
+#define escreverAnalogico(pino, valor) analogWrite(pino, valor)
+#define escreverDigital(pino, valor) digitalWrite(pino, valor)
 
-#define lerDigital(x) digitalRead(x)
-#define lerAnalogigo(x) analogRead(x)
+#define lerDigital(pino) digitalRead(pino)
+#define lerAnalogigo(pino) analogRead(pino)
 
 //------------------Funções Principais---------------------
 #define configurar setup
 #define repetir loop
 
 //------------------Funções de Configuração----------------
-#define saida(x) pinMode(x, OUTPUT)
-#define entrada(x) pinMode(x, INPUT)
-#define definirPino(x, y) pinMode(x, y)
+#define saida(pino) pinMode(pino, OUTPUT)
+#define entrada(pino) pinMode(pino, INPUT)
+#define definirPino(pino, tipo) pinMode(pino, tipo)
 
 //------------------Funções de Serial----------------------
 #ifndef BAUD
@@ -79,8 +79,8 @@
 #endif
 
 #define lerSerial() Serial.read()
-#define escreverSerialn(x) Serial.println(x)
-#define escreverSerial(x) Serial.print(x)
+#define escreverSerialn(texto) Serial.println(texto)
+#define escreverSerial(texto) Serial.print(texto)
 
 
 #endif
