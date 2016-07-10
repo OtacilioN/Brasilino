@@ -36,6 +36,9 @@
 #define enquanto while
 #define para for
 #define sair break
+#define contarAte(y) for(int x=0; x < y; x++)
+#define contarDe(y) for(int x = y; x > 0; x--)
+
 //------------------Funções---------------------
 #define imprimir print
 #define imprimirLinha println
@@ -45,6 +48,7 @@
 #define ler read
 
 #define esperar(tempo) delay(tempo*1000)
+#define esperarMili(tempo) delay(tempo)
 
 //------------------Funções de Comando---------------------
 #define ligar(x) digitalWrite(x, HIGH)
