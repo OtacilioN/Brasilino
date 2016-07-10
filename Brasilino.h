@@ -19,6 +19,8 @@
 #define BAIXO LOW
 #define verdadeiro true
 #define falso false
+#define PRESSIONADO HIGH
+#define LIBERADO LOW
 
 //------------------Tipos de variáveis---------------------
 #define nulo void
@@ -28,9 +30,11 @@
 #define dobro double
 #define caracter char
 #define logico boolean
+#define constante const 
 
 //------------------Laços Lógicos---------------------
 #define se if
+#define senao else
 #define caso switch
 //------------------Laços de Repetição---------------------
 #define enquanto while
