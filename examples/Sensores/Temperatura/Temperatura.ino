@@ -41,7 +41,7 @@ funcao repetir(){
     
     // Imprime no Monitor Serial a temperatura atual e o simbolo de °C.
     escreverSerial(temperaturaAtual);
-    escreverSerialn(" °C.");
+    escreverSerialn(" graus Celsius.");
     
     esperarMili(100); // Espera 100 Milissegundos
 }
