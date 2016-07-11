@@ -14,7 +14,7 @@ escreverSerial	KEYWORD1
 
 #######################################
 # Metodos e Funções (KEYWORD2)
-#######################################	
+#######################################
 
 imprimir	KEYWORD2
 imprimirLinha	KEYWORD2
