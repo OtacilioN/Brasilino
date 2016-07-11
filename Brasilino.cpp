@@ -1,4 +1,5 @@
 #include "Brasilino.h"
+#include <math.h>
 
 dobro temperatura(int RawADC) {
  dobro Temp;

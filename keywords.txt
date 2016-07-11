@@ -22,6 +22,7 @@ iniciar	KEYWORD2
 escrever	KEYWORD2
 ler	KEYWORD2
 esperar	KEYWORD2
+esperarMili	KEYWORD2
 ligar	KEYWORD2
 desligar	KEYWORD2
 escreverAnalogico	KEYWORD2

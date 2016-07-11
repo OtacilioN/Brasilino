@@ -29,10 +29,10 @@ funcao configurar(){
 funcao repetir(){
     
     leituraSensor = lerAnalogigo(termistor); // Realizar a leitura em nível analógico do termistor no pino A0.
-    tempAtual = temperatura(leituraSensor); // Converte o valor analogico em temperatura dada em °C.
+    temperaturaAtual = temperatura(leituraSensor); // Converte o valor analogico em temperatura dada em °C.
     
     // Analisa a temperatura e emite opiniao com base na temperatura media definida
-    se(tempAtual > temperaturaMedia){
+    se(temperaturaAtual > temperaturaMedia){
         escreverSerial("Esta' calor agora: ");
     }
     senao{
@@ -41,7 +41,7 @@ funcao repetir(){
     
     // Imprime no Monitor Serial a temperatura atual e o simbolo de °C.
     escreverSerial(temperaturaAtual);
-    escreverSerialn(" °C.")
+    escreverSerialn(" °C.");
     
     esperarMili(100); // Espera 100 Milissegundos
 }
