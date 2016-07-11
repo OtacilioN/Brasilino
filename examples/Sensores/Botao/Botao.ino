@@ -19,6 +19,8 @@
     Este exemplo é baseado no exemplo Button do Arduino.
 */ 
 
+#include <Brasilino.h>
+
 // As constantes não mudam o seu valor, nesse caso serao:
 constante inteiro led = 13; // O pino ao qual o led está conectado.
 constante inteiro botao = 2; // O pino ao qual o botão está conectado.

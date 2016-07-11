@@ -14,6 +14,8 @@
     Este exemplo é baseado no exemplo Fade do Arduino.
 */ 
 
+#include <Brasilino.h>
+
 inteiro led 13; // O pino ao qual o led está conectado.
 inteiro luminosidade = 0; // O quão luminoso o led irá ficar, variando de 0 a 255.
 

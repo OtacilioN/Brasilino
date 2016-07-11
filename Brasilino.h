@@ -86,6 +86,7 @@
 #define escreverSerialn(texto) Serial.println(texto)
 #define escreverSerial(texto) Serial.print(texto)
 
+dobro temperatura(int RawADC);
 
 #endif
 
