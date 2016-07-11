@@ -29,7 +29,7 @@ funcao repetir(){
     luminosidadeAtual = lerAnalogigo(ldr); // Realizar a leitura em nível analógico do LDR no pino A1.
     
     // Analisa a luminosidade e emite opiniao com base na luminosidade media definida
-    se(luminosidadeAtual > luminosidadeAtual){ // Caso seja maior que
+    se(luminosidadeAtual > luminosidadeMedia){ // Caso seja maior que
         escreverSerial("Esta' claro agora: ");
     }
     senao{
