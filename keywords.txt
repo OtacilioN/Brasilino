@@ -1,53 +1,76 @@
-﻿#######################################
-# Sintaxe de cores do Brasilino
 #######################################
-
-#######################################
-# Tipos de Dados (KEYWORD1)
-#######################################
-
-nulo    KEYWORD1
-funcao  KEYWORD1
-inteiro KEYWORD1
-decimal KEYWORD1
-dobro   KEYWORD1
-caracter    KEYWORD1
-logico  KEYWORD1
+# Syntaxe de cores do Brasilino
+####################################### 
 
 #######################################
-# Métodos e Funções (KEYWORD2)
+# Funções especiais (KEYWORD1)
 #######################################
-se  KEYWORD2
-caso    KEYWORD2
 
-enquanto    KEYWORD2
-para    KEYWORD2
-sair    KEYWORD2
-
-imprimir    KEYWORD2
-imprimirLinha   KEYWORD2
-iniciar KEYWORD2
-
-escrever    KEYWORD2
-ler KEYWORD2
-esperar KEYWORD2
-
-ligar   KEYWORD2
-desligar    KEYWORD2
-
-    
-funcao  KEYWORD2
-configurar  KEYWORD2
-repetir KEYWORD2
-
-saida   KEYWORD2
-entrada KEYWORD2
-definirPino KEYWORD2
-
-lerSerial   KEYWORD2
-escreverSerialn KEYWORD2
+iniciarSerial	KEYWORD1
+lerSerial	KEYWORD1
+escreverSerialn	KEYWORD1
+escreverSerial	KEYWORD1
 
 
 #######################################
-# Constante (LITERAL1)
+# Metodos e Funções (KEYWORD2)
+#######################################	
+
+imprimir	KEYWORD2
+imprimirLinha	KEYWORD2
+iniciar	KEYWORD2
+escrever	KEYWORD2
+ler	KEYWORD2
+esperar	KEYWORD2
+ligar	KEYWORD2
+desligar	KEYWORD2
+escreverAnalogico	KEYWORD2
+escreverDigital	KEYWORD2
+lerDigital	KEYWORD2
+lerAnalogigo	KEYWORD2
+saida	KEYWORD2
+entrada	KEYWORD2
+definirPino	KEYWORD2
+
+
+#########################################
+# Estruturas específicas (KEYWORD3)
+#########################################
+
+repetir	KEYWORD3		RESERVED_WORD
+configurar	KEYWORD3		RESERVED_WORD
+se	KEYWORD3		RESERVED_WORD
+senao	KEYWORD3		RESERVED_WORD
+caso	KEYWORD3		RESERVED_WORD
+enquanto	KEYWORD3		RESERVED_WORD
+para	KEYWORD3		RESERVED_WORD
+sair	KEYWORD3		RESERVED_WORD
+
+contarAte	KEYWORD3		RESERVED_WORD
+contarDe	KEYWORD3		RESERVED_WORD
+
+
+\#definir	KEYWORD3		PREPROCESSOR
+\#usar	KEYWORD3		PREPROCESSOR
+
+
 #######################################
+# Consantes e tipos (LITERAL1)
+#######################################
+ 
+ENTRADA	LITERAL1
+SAIDA	LITERAL1
+ALTO	LITERAL1
+BAIXO	LITERAL1
+verdadeiro	LITERAL1
+falso	LITERAL1
+PRESSIONADO	LITERAL1
+LIBERADO	LITERAL1
+nulo	LITERAL1
+funcao	LITERAL1
+inteiro	LITERAL1
+decimal	LITERAL1
+dobro	LITERAL1
+caracter	LITERAL1
+logico	LITERAL1
+constante	LITERAL1
