@@ -32,7 +32,7 @@ funcao repetir(){
     temperaturaAtual = temperatura(leituraSensor); // Converte o valor analogico em temperatura dada em °C.
     
     // Analisa a temperatura e emite opiniao com base na temperatura media definida
-    se(temperaturaAtual > temperaturaMedia){
+    se(temperaturaAtual > temperaturaMedia){ // Caso seja maior que
         escreverSerial("Esta' calor agora: ");
     }
     senao{
