@@ -17,10 +17,10 @@
 #define SAIDA OUTPUT
 #define ALTO HIGH
 #define BAIXO LOW
-#define verdadeiro true
-#define falso false
 #define PRESSIONADO HIGH
 #define LIBERADO LOW
+#define verdadeiro true
+#define falso false
 
 //------------------Tipos de variáveis---------------------
 #define nulo void
@@ -67,7 +67,7 @@
 //------------------Funções Principais---------------------
 #define configurar setup
 #define repetir loop
-
+#define retorne return
 //------------------Funções de Configuração----------------
 #define saida(pino) pinMode(pino, OUTPUT)
 #define entrada(pino) pinMode(pino, INPUT)
