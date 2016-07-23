@@ -35,7 +35,8 @@
 //------------------Laços Lógicos---------------------
 #define se if
 #define senao else
-#define caso switch
+#define comparar switch
+#define caso case
 //------------------Laços de Repetição---------------------
 #define enquanto while
 #define para for
