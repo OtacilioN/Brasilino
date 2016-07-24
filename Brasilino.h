@@ -28,7 +28,7 @@
 #define inteiro	int
 #define decimal float 
 #define dobro double
-#define caracter char
+#define caractere char
 #define logico boolean
 #define constante const 
 
