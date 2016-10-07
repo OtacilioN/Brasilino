@@ -30,7 +30,9 @@
 #define dobro double
 #define caractere char
 #define logico boolean
-#define constante const 
+#define constante const
+#define longo long
+#define modulo unsigned 
 
 //------------------Laços Lógicos---------------------
 #define se if
@@ -88,6 +90,24 @@
 #define escreverSerial(texto) Serial.print(texto)
 
 dobro temperatura(int RawADC);
+
+/* Ultrassom */
+/* Este trecho e' baseado na biblioteca ultrassonic.h de J. Rodrigo e emcontra-se disponivel originalmente em: https://github.com/JRodrigoTech/Ultrasonic-HC-SR04 */
+#ifdef ULTRASSOM
+	class Ultrassom
+	{
+		public:
+    		Ultrassom(int TP, int EP);
+			long Temporizando();
+    		long Medir(int sys);
+
+		private:
+    		int Trig_pino;
+    		int Echo_pino;
+			long Tempo_limite;
+    		long duracao, distancia;
+	};
+#endif
 
 #endif
 

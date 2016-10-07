@@ -10,6 +10,7 @@ iniciarSerial	KEYWORD1
 lerSerial	KEYWORD1
 escreverSerialn	KEYWORD1
 escreverSerial	KEYWORD1
+Ultrassom	KEYWORD1
 
 
 #######################################
@@ -33,6 +34,8 @@ saida	KEYWORD2
 entrada	KEYWORD2
 definirPino	KEYWORD2
 temperatura	KEYWORD2
+Temporizando	KEYWORD2
+Medir	KEYWORD2
 
 
 #########################################
