@@ -8,5 +8,4 @@ dobro temperatura(int valorAnalogico) {
  Temp = Temp - 273.15;  
  retorne Temp;
 }
-/
 // Não apagar antes disso
