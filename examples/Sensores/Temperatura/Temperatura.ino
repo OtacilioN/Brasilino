@@ -28,7 +28,7 @@ funcao configurar(){
 
 funcao repetir(){
     
-    leituraSensor = lerAnalogigo(termistor); // Realizar a leitura em nível analógico do termistor no pino A0.
+    leituraSensor = lerAnalogico(termistor); // Realizar a leitura em nível analógico do termistor no pino A0.
     temperaturaAtual = temperatura(leituraSensor); // Converte o valor analogico em temperatura dada em °C.
     
     // Analisa a temperatura e emite opiniao com base na temperatura media definida

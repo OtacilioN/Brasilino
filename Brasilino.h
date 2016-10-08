@@ -69,7 +69,7 @@
 #define escreverDigital(pino, valor) digitalWrite(pino, valor)
 
 #define lerDigital(pino) digitalRead(pino)
-#define lerAnalogigo(pino) analogRead(pino)
+#define lerAnalogico(pino) analogRead(pino)
 
 //------------------Funções Principais---------------------
 #define configurar setup
