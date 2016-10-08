@@ -9,8 +9,12 @@
 #ifndef Brasilino_h
 #define Brasilino_h
 
-#define definir define
-#define usar define
+#if ARDUINO >= 100
+  #include "Arduino.h"
+#else
+  #include "WProgram.h"
+#endif
+
 
 //------------------Argumentos Lógicos---------------------
 #define ENTRADA INPUT
@@ -26,13 +30,13 @@
 #define nulo void
 #define funcao void
 #define inteiro	int
-#define decimal float 
+#define decimal float
 #define dobro double
 #define caractere char
 #define logico boolean
 #define constante const
 #define longo long
-#define modulo unsigned 
+#define modulo unsigned
 
 //------------------Laços Lógicos---------------------
 #define se if
@@ -77,11 +81,11 @@
 #define definirPino(pino, tipo) pinMode(pino, tipo)
 
 //------------------Funções de Serial----------------------
-#ifndef BAUD
+#ifndef USAR_BAUD
 	#define iniciarSerial() Serial.begin(9600)
 #endif
 
-#ifdef BAUD
+#ifdef USAR_BAUD
 	#define iniciarSerial(baud) Serial.begin(baud)
 #endif
 
@@ -93,13 +97,12 @@ dobro temperatura(int RawADC);
 
 /* Ultrassom */
 /* Este trecho e' baseado na biblioteca ultrassonic.h de J. Rodrigo e emcontra-se disponivel originalmente em: https://github.com/JRodrigoTech/Ultrasonic-HC-SR04 */
-#ifdef ULTRASSOM
 	class Ultrassom
 	{
 		public:
     		Ultrassom(int TP, int EP);
 			long Temporizando();
-    		long Medir(int sys);
+    		long Medir();
 
 		private:
     		int Trig_pino;
@@ -108,7 +111,4 @@ dobro temperatura(int RawADC);
     		long duracao, distancia;
 	};
 #endif
-
-#endif
-
 // Não apagar antes disto.
