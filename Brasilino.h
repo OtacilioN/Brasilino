@@ -78,8 +78,8 @@
 //------------------Funções de Configuração----------------
 #define saida(pino) pinMode(pino, OUTPUT)
 #define entrada(pino) pinMode(pino, INPUT)
-#define entradaAlta(pino) { pinMode(pino, INPUT); DigitalWrite(pino,HIGH) }
-#define entradaBaixa(pino) { pinMode(pino, INPUT); DigitalWrite(pino,LOW) }
+#define entradaAlta(pino) {pinMode(pino,INPUT);DigitalWrite(pino,HIGH)}
+#define entradaBaixa(pino) {pinMode(pino,INPUT);DigitalWrite(pino,LOW)}
 #define definirPino(pino, tipo) pinMode(pino, tipo)
 
 //------------------Funções de Serial----------------------
