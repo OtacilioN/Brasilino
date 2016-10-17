@@ -27,8 +27,10 @@
 #define falso false
 
 //------------------Tipos de variáveis---------------------
-#define nulo void
+#define vazio void //Contribuicao de @alessonrenato atraves de issue
 #define funcao void
+#define procedimento void //Contribuicao de @alessonrenato atraves de issue
+#define nulo NULL //Contribuicao de @alessonrenato atraves de issue
 #define inteiro	int
 #define decimal float
 #define dobro double

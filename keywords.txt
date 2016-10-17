@@ -1,6 +1,6 @@
 #######################################
 # Syntaxe de cores do Brasilino
-####################################### 
+#######################################
 
 #######################################
 # Funções especiais (KEYWORD1)
@@ -64,7 +64,7 @@ contarDe	KEYWORD3		RESERVED_WORD
 #######################################
 # Consantes e tipos (LITERAL1)
 #######################################
- 
+
 ENTRADA	LITERAL1
 SAIDA	LITERAL1
 ALTO	LITERAL1
@@ -74,7 +74,9 @@ falso	LITERAL1
 PRESSIONADO	LITERAL1
 LIBERADO	LITERAL1
 nulo	LITERAL1
+vazio	LITERAL1
 funcao	LITERAL1
+procedimento	LITERAL1
 inteiro	LITERAL1
 decimal	LITERAL1
 dobro	LITERAL1
