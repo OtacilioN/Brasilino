@@ -78,6 +78,7 @@
 //------------------Funções de Configuração----------------
 #define saida(pino) pinMode(pino, OUTPUT)
 #define entrada(pino) pinMode(pino, INPUT)
+#define entradaAlta(pino) pinMode(pino,INPUT_PULLUP)
 #define definirPino(pino, tipo) pinMode(pino, tipo)
 
 //------------------Funções de Serial----------------------
