@@ -16,7 +16,7 @@
 // Inclue a biblioteca Brasilino
 #include <Brasilino.h>
 
-Ultrassom dois(9,8);
+Ultrassom ultrassom(9,8);
 
 
 funcao configurar(){
@@ -26,7 +26,7 @@ funcao configurar(){
 
 funcao repetir(){
     //Escreve na serial o valor medido pelo sensor.
-    escreverSerial(dois.Medir());
+    escreverSerial(ultrassom.Medir());
     escreverSerialn(" CM");
     esperar(1);
 }
