@@ -10,3 +10,13 @@ Devido ao baixo índice de proficiência em língua inglesa apresentado pelo Bra
 Nós do Brasilino acreditamos que **quebrando esta barreira inicial, criamos o incentivo** para que estes brasileros possam **ter o primeiro contato com a plataforma Arduino**, desenvolvendo assim suas próprias soluções, e a partir deste primeiro contato, os mesmos possam **quebrar o paradigma de que programar é difícil**, e quando apenas o idioma for a última barreira, através de uma **migração gradual**, da programação em Brasilino para a programaçao em Arduino, a barreira do idioma possa por fim ser quebrada.
 
 A brasilino é uma **biblioteca aberta** e conta com a **participação de toda a comunidade**, através das necessidades encontradas pelos usuários, poderemos cada vez mais **criar comandos mais intuitivos e simplificados** de utilizar, promovendo-se assim que a biblioteca facilite cada vez mais a inserção de novos brasileiros.
+
+Como utilizar:
+---------------
+
+1. **Instalação**
+    - Primeiro baixe a biblioteca clicando [aqui] ()
+    - Abra a sua IDE do Arduino, clique em ```Sketch > Incluir Biblioteca > Adicionar biblioteca .ZIP```
+    - Procure a biblioteca Brasilino baixada em arquivo .ZIP em sua pasta de downloads
+    - Pronto, agora a sua biblioteca está instalada e pronta para ser utilizada!
+    
