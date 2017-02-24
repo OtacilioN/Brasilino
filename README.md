@@ -91,6 +91,8 @@ O Equipe Brasilino:
 ![](http://www.railbeesystem.com/images/team/romulo.gif)<br>
 **Orientador Acadêmico**
 
+Veja a lista completa de [colaboradores](https://github.com/OtacilioN/BrasilinoD/graphs/contributors).
+
 Artigos Acadêmicos:
 ---------------
 
