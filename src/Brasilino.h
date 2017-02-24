@@ -84,8 +84,8 @@
 #define definirPino(pino, tipo) pinMode(pino, tipo)
 
 //------------------Funções de Serial----------------------
-#define iniciarSerial() Serial.begin(9600)
-#define iniciarSerialBaud(baud) Serial.begin(baud)
+void iniciarSerial(void);
+void iniciarSerial(int baud);
 
 #define lerSerial() Serial.read()
 #define escreverSerialn(texto) Serial.println(texto)
