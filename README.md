@@ -20,3 +20,11 @@ Como utilizar:
     - Procure a biblioteca Brasilino baixada em arquivo .ZIP em sua pasta de downloads
     - Pronto, agora a sua biblioteca está instalada e pronta para ser utilizada!
     
+2. **Exemplos**
+    - Uma das melhores formas de se começar a programar utilizando a Brasilino é partir de um exemplo! 
+    - Para abrir a aba de exemplos clique em ```Arquivo > Exemplos > Brasilino``` (É preciso descer dentro da aba de exemplos até encontrar "Exemplos de Bibliotecas Personalizadas")
+    - Então você pode escolher um exemplo da aba de Basicos ou de Sensores, daí basta clicar no exemplo escolhido e iniciar!
+    - Você pode começar com o exemplo "Piscar", que é equivalente ao exemplo "Blink" do Arduino, para isso basta clicar em ```Arquivo > Exemplos > Brasilino > Basicos > Piscar```
+    
+
+ 
