@@ -84,13 +84,8 @@
 #define definirPino(pino, tipo) pinMode(pino, tipo)
 
 //------------------Funções de Serial----------------------
-#ifndef USAR_BAUD
-	#define iniciarSerial() Serial.begin(9600)
-#endif
-
-#ifdef USAR_BAUD
-	#define iniciarSerial(baud) Serial.begin(baud)
-#endif
+#define iniciarSerial() Serial.begin(9600)
+#define iniciarSerialBaud(baud) Serial.begin(baud)
 
 #define lerSerial() Serial.read()
 #define escreverSerialn(texto) Serial.println(texto)
