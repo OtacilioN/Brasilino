@@ -91,7 +91,7 @@ O Equipe Brasilino:
 ![](http://www.railbeesystem.com/images/team/romulo.gif)<br>
 **Orientador Acadêmico**
 
-Veja a lista completa de [colaboradores](https://github.com/OtacilioN/BrasilinoD/graphs/contributors).
+Veja a lista completa de [colaboradores](https://github.com/OtacilioN/Brasilino/graphs/contributors).
 
 Artigos Acadêmicos:
 ---------------
@@ -99,3 +99,11 @@ Artigos Acadêmicos:
 A biblioteca foi apresentada na Mostra Nacional de Robótica em 2016, o que gerou um artigo publicado na mostra virtual, disponível em: http://www.mnr.org.br/mostravirtual/interna.php?id=15321.
 
 O Brasilino encontra-se aberto para ser utilizado em todo tipo de pesquisa e desenvolvimento científico-acadêmico.
+
+Licença:
+---------------
+
+Brasilino está licenciado sob a licença GPL-3.0, e tem seus exemplos baseados no trabalho do projeto [Arduino] (https://github.com/arduino/Arduino)
+Sinta-se livre para enviar um email para: brasilino@makerama.com.br
+Veja [Licença] https://github.com/OtacilioN/Brasilino/blob/master/LICENSE para mais informações.
+
