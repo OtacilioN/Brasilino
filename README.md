@@ -90,3 +90,10 @@ O Equipe Brasilino:
 <br>
 ![](http://www.railbeesystem.com/images/team/romulo.gif)<br>
 **Orientador Acadêmico**
+
+Artigos Acadêmicos:
+---------------
+
+A biblioteca foi apresentada na Mostra Nacional de Robótica em 2016, o que gerou um artigo publicado na mostra virtual, disponível em: http://www.mnr.org.br/mostravirtual/interna.php?id=15321.
+
+O Brasilino encontra-se aberto para ser utilizado em todo tipo de pesquisa e desenvolvimento científico-acadêmico.
