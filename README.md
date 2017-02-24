@@ -100,10 +100,17 @@ A biblioteca foi apresentada na Mostra Nacional de Robótica em 2016, o que gero
 
 O Brasilino encontra-se aberto para ser utilizado em todo tipo de pesquisa e desenvolvimento científico-acadêmico.
 
+Apoio:
+---------------
+
+A biblioteca Brasilino é apoiada pelo Makerama, uma comunidade Maker que apoia o desenvolvimento de ideias criativas no estado de Pernambuco. Mais informações disponíveis em: http://makerama.com.br
+
+![](http://makerama.com.br/wp-content/uploads/2016/03/makerama_100.png)<br>
+
 Licença:
 ---------------
 
 Brasilino está licenciado sob a licença GPL-3.0, e tem seus exemplos baseados no trabalho do projeto [Arduino] (https://github.com/arduino/Arduino)
 Sinta-se livre para enviar um email para: brasilino@makerama.com.br
-Veja [Licença] https://github.com/OtacilioN/Brasilino/blob/master/LICENSE para mais informações.
+Veja [Licença] (https://github.com/OtacilioN/Brasilino/blob/master/LICENSE) para mais informações.
 
