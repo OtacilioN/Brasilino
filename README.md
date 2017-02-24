@@ -67,3 +67,26 @@ Tabela de instruções:
 | SAIDA            | Parâmetro que indica tratar-se de uma saída.                                                                                                                                                                   | definirPino(11, SAIDA);                                                                                                                                          |
 | PRESSIONADO      | Parâmetro para botão pressionado                                                                                                                                                                               | se(estadoBotao == PRESSIONADO)                                                                                                                                   |
 | LIBERADO         | Parâmetro para botão liberado.                                                                                                                                                                                 | se(estadoBotao == LIBERADO)                                                                                                                                      |
+
+O Equipe Brasilino:
+---------------
+
+**Otacilio Neto** ([github](https://github.com/OtacilioN))
+<br>
+![](https://github.com/OtacilioN.png?size=230)<br>
+**Idelização e Implementação**
+
+**Thiago Augusto** ([github](https://github.com/ThiagoAugustoSM))
+<br>
+![](https://github.com/ThiagoAugustoSM.png?size=230)<br>
+**Validação e Implementação**
+
+**Erick Simoes** ([github](https://github.com/ErickSimoes))
+<br>
+![](https://github.com/ErickSimoes.png?size=230)<br>
+**Consultor de formatação e Implementação**
+
+**Rômulo César** 
+<br>
+![](http://www.railbeesystem.com/images/team/romulo.gif)<br>
+**Orientador Acadêmico**
