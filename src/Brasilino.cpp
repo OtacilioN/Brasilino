@@ -1,6 +1,14 @@
 #include "Brasilino.h"
 #include <math.h>
 
+void iniciarSerial(void) {
+  Serial.begin(9600);
+}
+
+void iniciarSerial(int baud) {
+  Serial.begin(baud);
+}
+
 dobro temperatura(inteiro valorAnalogico) {
     dobro Temp;
     Temp = log(10000.0*((1024.0/valorAnalogico-1)));
