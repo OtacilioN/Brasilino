@@ -15,7 +15,6 @@
   #include "WProgram.h"
 #endif
 
-
 //------------------Argumentos Lógicos---------------------
 #define ENTRADA INPUT
 #define SAIDA OUTPUT
@@ -98,15 +97,15 @@ dobro temperatura(int RawADC);
 	class Ultrassom
 	{
 		public:
-    		Ultrassom(int TP, int EP);
+			Ultrassom(int TP, int EP);
 			long Temporizando();
-    		long Medir();
+			long Medir();
 
 		private:
-    		int Trig_pino;
-    		int Echo_pino;
+			int Trig_pino;
+			int Echo_pino;
 			long Tempo_limite;
-    		long duracao, distancia;
+			long duracao, distancia;
 	};
 #endif
 // Não apagar antes disto.
