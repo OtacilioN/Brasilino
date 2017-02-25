@@ -55,7 +55,6 @@ long Ultrassom::Temporizando() {
 
 long Ultrassom::Medir() {
 	Temporizando();
-	distancia = duracao / 29 / 2;
-	return distancia;
+	return duracao / 29 / 2;
 }
 // Não apagar antes disso

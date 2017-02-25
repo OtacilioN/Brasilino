@@ -112,7 +112,7 @@ dobro temperatura(int RawADC);
 			int trig_pino;
 			int echo_pino;
 			long tempo_limite;
-			long duracao, distancia;
+			long duracao;
 	};
 #endif
 // Não apagar antes disto.
