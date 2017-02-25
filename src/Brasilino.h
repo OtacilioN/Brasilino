@@ -49,11 +49,12 @@
 #define senao else
 #define comparar switch
 #define caso case
+
 //------------------Laços de Repetição---------------------
 #define enquanto while
 #define para for
 #define sair break
-#define contarAte(y) for(int x=0; x < y; x++)
+#define contarAte(y) for(int x = 0; x < y; x++)
 #define contarDe(y) for(int x = y; x > 0; x--)
 
 //------------------Funções---------------------
@@ -81,10 +82,11 @@
 #define configurar setup
 #define repetir loop
 #define retorne return
+
 //------------------Funções de Configuração----------------
 #define saida(pino) pinMode(pino, OUTPUT)
 #define entrada(pino) pinMode(pino, INPUT)
-#define entradaAlta(pino) pinMode(pino,INPUT_PULLUP)
+#define entradaAlta(pino) pinMode(pino, INPUT_PULLUP)
 #define definirPino(pino, tipo) pinMode(pino, tipo)
 
 //------------------Funções de Serial----------------------
@@ -102,14 +104,14 @@ dobro temperatura(int RawADC);
 	class Ultrassom
 	{
 		public:
-			Ultrassom(int TP, int EP);
+			Ultrassom(int tp, int ep);
 			long Temporizando();
 			long Medir();
 
 		private:
-			int Trig_pino;
-			int Echo_pino;
-			long Tempo_limite;
+			int trig_pino;
+			int echo_pino;
+			long tempo_limite;
 			long duracao, distancia;
 	};
 #endif

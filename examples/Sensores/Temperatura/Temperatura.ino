@@ -22,24 +22,23 @@ constante inteiro temperaturaMedia = 28;
 dobro temperaturaAtual = 0;
 inteiro leituraSensor = 0;
 
-funcao configurar(){
-    iniciarSerial(); // Inicia a comunicação Serial com o computador.
+funcao configurar() {
+    iniciarSerial(); // Inicia a comunicação Serial com o computador
 }
 
-funcao repetir(){
+funcao repetir() {
     
-    leituraSensor = lerAnalogico(termistor); // Realizar a leitura em nível analógico do termistor no pino A0.
-    temperaturaAtual = temperatura(leituraSensor); // Converte o valor analogico em temperatura dada em °C.
+    leituraSensor = lerAnalogico(termistor); // Realizar a leitura em nível analógico do termistor no pino A0
+    temperaturaAtual = temperatura(leituraSensor); // Converte o valor analogico em temperatura dada em °C
     
     // Analisa a temperatura e emite opiniao com base na temperatura media definida
-    se(temperaturaAtual > temperaturaMedia){ // Caso seja maior que
+    se(temperaturaAtual > temperaturaMedia) { // Caso seja maior que
         escreverSerial("Esta' calor agora: ");
-    }
-    senao{
+    } senao {
         escreverSerial("Esta' frio agora: ");
     }
     
-    // Imprime no Monitor Serial a temperatura atual e o simbolo de °C.
+    // Imprime no Monitor Serial a temperatura atual e o simbolo de °C
     escreverSerial(temperaturaAtual);
     escreverSerialn(" graus Celsius.");
     

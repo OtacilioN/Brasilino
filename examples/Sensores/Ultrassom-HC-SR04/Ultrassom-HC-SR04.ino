@@ -16,16 +16,15 @@
 // Inclue a biblioteca Brasilino
 #include <Brasilino.h>
 
-Ultrassom ultrassom(9,8);
+Ultrassom ultrassom(9, 8);
 
-
-funcao configurar(){
-    // Inicializa a comunicação serial com a placa.
+funcao configurar() {
+    // Inicializa a comunicação serial com a placa
     iniciarSerial();
 }
 
-funcao repetir(){
-    //Escreve na serial o valor medido pelo sensor.
+funcao repetir() {
+    //Escreve na serial o valor medido pelo sensor
     escreverSerial(ultrassom.Medir());
     escreverSerialn(" CM");
     esperar(1);

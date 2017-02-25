@@ -20,23 +20,22 @@ constante inteiro luminosidadeMedia = 500;
 
 inteiro luminosidadeAtual = 0;
 
-funcao configurar(){
-    iniciarSerial(); // Inicia a comunicação Serial com o computador.
+funcao configurar() {
+    iniciarSerial(); // Inicia a comunicação Serial com o computador
 }
 
-funcao repetir(){
+funcao repetir() {
     
-    luminosidadeAtual = lerAnalogico(ldr); // Realizar a leitura em nível analógico do LDR no pino A1.
+    luminosidadeAtual = lerAnalogico(ldr); // Realizar a leitura em nível analógico do LDR no pino A1
     
     // Analisa a luminosidade e emite opiniao com base na luminosidade media definida
-    se(luminosidadeAtual > luminosidadeMedia){ // Caso seja maior que
+    se(luminosidadeAtual > luminosidadeMedia) { // Caso seja maior que
         escreverSerial("Esta' claro agora: ");
-    }
-    senao{
+    } senao {
         escreverSerial("Esta' escuro agora: ");
     }
     
-    // Imprime no Monitor Serial a luminosidade atual.
+    // Imprime no Monitor Serial a luminosidade atual
     escreverSerialn(luminosidadeAtual);
     
     esperarMili(100); // Espera 100 Milissegundos
