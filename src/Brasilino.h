@@ -1,10 +1,15 @@
 /*
-	Brasilino.h - Programe em PT-BR.
-	Esta biblioteca insere uma série de facilitações e permite programar em linguagem Arduino utilizando como lingua nativa o português do Brasil.
-	Mais instruções disponíveis em: https://github.com/OtacilioN/Brasilino
-	Desenvolvido por Otacilio Neto e Thiago Augusto Martins, Julho, 2016.
-	Orientado pelo Prof. Dr. Rômulo Cesar Carvalho de Araújo.
-*/
+ * Brasilino.h
+ * 
+ * Biblioteca de tradução e facilitação de funções para Arduino em PT-BR
+ *
+ * Criado em 7 Julho 2016
+ * Por Otacilio Neto (github: @OtacilioN | Email: contato@otacilio.me), Thiago Augusto (github: @ThiagoAugustoSM | email: martinsthiagoaugusto@gmail.com)
+ * Modificado em 24 Fevereiro 2017
+ * Por Erick Simões (github: @ErickSimoes | twitter: @AloErickSimoes)
+ * 
+ * Publicado na Licença GPL-3.0
+ */
 
 #ifndef Brasilino_h
 #define Brasilino_h

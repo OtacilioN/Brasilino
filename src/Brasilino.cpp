@@ -1,3 +1,16 @@
+/*
+ * Brasilino.cpp
+ * 
+ * Biblioteca de tradução e facilitação de funções para Arduino em PT-BR
+ *
+ * Criado em 7 Julho 2016
+ * Por Otacilio Neto (github: @OtacilioN | Email: contato@otacilio.me), Thiago Augusto (github: @ThiagoAugustoSM | email: martinsthiagoaugusto@gmail.com)
+ * Modificado em 24 Fevereiro 2017
+ * Por Erick Simões (github: @ErickSimoes | twitter: @AloErickSimoes)
+ * 
+ * Publicado na Licença GPL-3.0
+ */
+
 #include "Brasilino.h"
 #include <math.h>
 
