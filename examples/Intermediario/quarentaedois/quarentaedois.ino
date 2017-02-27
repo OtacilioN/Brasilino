@@ -17,7 +17,7 @@
          
 /* Dica: A palavra Sintaxe, em programação, refere-se a forma com que as instruções são escritas, você 
          pode conferir se a sintaxe de uma instrução está correta pela mudança de cor, todas as instruções 
-         do Brasilino possuem uma cor específica para indicar que foram digitadas corretamente /*
+         do Brasilino possuem uma cor específica para indicar que foram digitadas corretamente */ 
 
 /* Dica: No Brasilino, assim como em Arduino, as letras MAIÚSCULAS e minúsculas fazem diferença na sintaxe de 
          uma instrução, portanto a instrução ligar(); é interpretada em Brasilino, mas a instrução Ligar, não.
