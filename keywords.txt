@@ -80,6 +80,8 @@ procedimento	LITERAL1
 inteiro	LITERAL1
 decimal	LITERAL1
 dobro	LITERAL1
-caracter	LITERAL1
+caractere	LITERAL1
 logico	LITERAL1
 constante	LITERAL1
+longo	LITERAL1
+modulo	LITERAL1

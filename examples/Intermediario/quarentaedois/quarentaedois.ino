@@ -39,7 +39,7 @@ decimal temperaturaAtual;    // Em aproximadamente 43.731 % das vezes precisamos
 caractere letra = 'A';       // As variáveis do tipo caractere são responsáveis por armazenar letras e símbolos
 logico botao;                // As variáveis do tipo lógico são as mais simples, só podem ter o valor de verdadeiro ou falso
 
-longo numeroGrande = 9999999 // Quando precisamos de armazenar números muito grandes utilizamos as variáveis do tipo longo
+longo numeroGrande = 999999; // Quando precisamos de armazenar números muito grandes utilizamos as variáveis do tipo longo
 constante inteiro RESP = 42; // Nem sempre precisamos que os valores sejam modificados ao longo do código, para isso criamos constantes
 modulo inteiro positivo;     // E algumas vezes não queremos valores negativos para as nossas variáveis
 
