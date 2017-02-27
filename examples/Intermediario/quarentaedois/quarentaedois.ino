@@ -35,7 +35,7 @@ inteiro numero;              // Cria uma variável chamada "numero" que armazena
 inteiro resposta = -42;      // Além de criar uma variável você também pode atribuir um valor inicial para a mesma, basta utilizar o "="
 inteiro luminosidade, valor; // Você também pode criar mais de uma variável na mesma linha, basta separá-las por vírgula
 
-decimal temperatura;         // Em aproximadamente 43.731 % das vezes precisamos utilizar variáveis com valores decimais
+decimal temperaturaAtual;    // Em aproximadamente 43.731 % das vezes precisamos utilizar variáveis com valores decimais
 caractere letra = 'A';       // As variáveis do tipo caractere são responsáveis por armazenar letras e símbolos
 logico botao;                // As variáveis do tipo lógico são as mais simples, só podem ter o valor de verdadeiro ou falso
 
