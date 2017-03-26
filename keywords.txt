@@ -32,6 +32,7 @@ lerDigital	KEYWORD2
 lerAnalogico	KEYWORD2
 saida	KEYWORD2
 entrada	KEYWORD2
+entradaAlta	KEYWORD2
 definirPino	KEYWORD2
 temperatura	KEYWORD2
 Temporizando	KEYWORD2
