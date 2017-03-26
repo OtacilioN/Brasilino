@@ -67,11 +67,11 @@ funcao configurar() {
 funcao repetir() {
     
     distancia = usFrente.Medir();   // Salva na variavel distancia o valor de medicao do ultrassom
-    se(distancia < 15){             // Confere se o valor de distancia é menor que 15 cm
+    se(distancia < 15) {            // Confere se o valor de distancia é menor que 15 cm
         escreverSerialn("Cuidado, esta' perto!");   // O comando escreverSerialn pula uma linha após imprimir na tela
         esperar(0.5);               // Espera meio segundo para executar a proxima instrução
     }
-    senao{                          // Caso não seja menor que 15 cm
+    senao {                         // Caso não seja menor que 15 cm
         escreverSerialn("Esta' longe ainda!");
         esperarMili(500);           // Faz o programa esperar 500 milissegundos, que equivale a meio segundo
     }
@@ -99,5 +99,41 @@ funcao repetir() {
     
     desligar(5);                // Desliga o pino 5 do Arduino
     escreverDigital(5, BAIXO);  // Também pode se desligar um pino assim
+    esperar(1);
     
+    botao = lerDigital(2);      // Salva o valor da leitura digital do pino 2 na variavel botao
+    
+    se(botao == PRESSIONADO) {
+        Serial.imprimir("Fui pressionado"); // Voce também pode escrever no Serial monitor assim
+    }
+    senao {
+        Serial.imprimirLinha("Nao fui pressionado"); // Caso queira que pule uma linha ao final
+    }
+    
+    letra = lerSerial();        // Salva um valor recebido atraves da comunicacao serial, como por exemplo do serial monitor
+    
+    comparar(letra) {           // Compara a variavel letra
+        caso 'A':
+            escreverSerialn("Recebi um A");
+            sair;
+            
+        caso 'B':
+            escreverSerialn("Recebi um B");
+            sair;
+            
+        caso 'a':
+            escreverSerialn("Recebi um a");
+            sair;
+            
+        caso 'b':
+            escreverSerialn("Recebi um b");
+            sair;
+    }
+    
+    letra = Serial.ler();       // Você também pode ser a serial assim
+    
+    enquanto(letra != 'C') {    // Lê-se, enquanto letra for diferente de 'A', ele repete o que está dentro dos colchetes
+        escreverSerialn("Ainda não recebi um C");
+        esperar(0.5);
+    }
 }
