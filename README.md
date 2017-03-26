@@ -15,7 +15,7 @@ Como utilizar:
 ---------------
 
 1. **Instalação**
-    - Primeiro baixe a biblioteca clicando [aqui] ()
+    - Primeiro baixe a biblioteca clicando [aqui] (https://github.com/OtacilioN/Brasilino/archive/v1.0.0.zip)
     - Abra a sua IDE do Arduino, clique em ```Sketch > Incluir Biblioteca > Adicionar biblioteca .ZIP```
     - Procure a biblioteca Brasilino baixada em arquivo .ZIP em sua pasta de downloads
     - Pronto, agora a sua biblioteca está instalada e pronta para ser utilizada!
