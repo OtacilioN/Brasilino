@@ -83,8 +83,8 @@ funcao repetir() {
         esperar(0.1);           // Espera 0.1 segundos 
     }
     
-    para(x = 0; x < 10; x++) {  // Tambem conta de 0 ate 9, sendo a instrucao contarAte expandida
-        escreverSerialn(X);
+    para(inteiro x = 0; x < 10; x++) {  // Tambem conta de 0 ate 9, sendo a instrucao contarAte expandida
+        escreverSerialn(x);
         esperar(0.1);
     }
     
