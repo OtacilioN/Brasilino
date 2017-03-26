@@ -33,7 +33,7 @@
 
 inteiro numero;              // Cria uma variável chamada "numero" que armazena valores inteiros
 inteiro resposta = -42;      // Além de criar uma variável você também pode atribuir um valor inicial para a mesma, basta utilizar o "="
-inteiro luminosidade, valor; // Você também pode criar mais de uma variável na mesma linha, basta separá-las por vírgula
+inteiro distancia, valor;    // Você também pode criar mais de uma variável na mesma linha, basta separá-las por vírgula
 
 decimal temperaturaAtual;    // Em aproximadamente 43.731 % das vezes precisamos utilizar variáveis com valores decimais
 caractere letra = 'A';       // As variáveis do tipo caractere são responsáveis por armazenar letras e símbolos
@@ -42,8 +42,9 @@ logico botao;                // As variáveis do tipo lógico são as mais simpl
 longo numeroGrande = 999999; // Quando precisamos de armazenar números muito grandes utilizamos as variáveis do tipo longo
 constante inteiro RESP = 42; // Nem sempre precisamos que os valores sejam modificados ao longo do código, para isso criamos constantes
 modulo inteiro positivo;     // E algumas vezes não queremos valores negativos para as nossas variáveis
+Ultrassom usFrente(9, 8);    // Declara um sensor de Ultrassom chamado "usFrente" nos pinos 9 e 8
 
-// Você também pode chamar de proedimento configurar se preferir
+// Você também pode chamar de procedimento configurar se preferir
 funcao configurar() {
     
     /* A função inciarSerial inicia uma comunicação serial entre o Arduino e o computador ou outro dispositivo,
@@ -57,11 +58,46 @@ funcao configurar() {
     definirPino(3, ENTRADA);    // Têm o mesmo efeito que a função de cima, porém neste caso para o pino 3
     saida(4);                   // Declara o pino 4 do Arduino como uma saída
     definirPino(5, SAIDA);      // Têm o mesmo efeito que a função de cima, porém neste caso para o pino 5
-    
+    // Formas especiais
+    entradaAlta(6);             // Declara o pino 6 como sendo uma entrada com o resistor interno de PullUp
     
 }
 
 // Aqui também pode ser chamado de procedimento repetir, fica à sua escolha
 funcao repetir() {
+    
+    distancia = usFrente.Medir();   // Salva na variavel distancia o valor de medicao do ultrassom
+    se(distancia < 15){             // Confere se o valor de distancia é menor que 15 cm
+        escreverSerialn("Cuidado, esta' perto!");   // O comando escreverSerialn pula uma linha após imprimir na tela
+        esperar(0.5);               // Espera meio segundo para executar a proxima instrução
+    }
+    senao{                          // Caso não seja menor que 15 cm
+        escreverSerialn("Esta' longe ainda!");
+        esperarMili(500);           // Faz o programa esperar 500 milissegundos, que equivale a meio segundo
+    }
+    
+    temperaturaAtual = temperatura(lerAnalogico(A0));   // Realiza a leitura da temperatura de um termistor de 10k no pino A0
+    
+    contarAte(10) {             // Conta 10 numeros, do 0 até o 9
+        escreverSerial(x);      // Escreve os numeros sendo contados na variavel x
+        esperar(0.1);           // Espera 0.1 segundos 
+    }
+    
+    para(x = 0; x < 10; x++) {  // Tambem conta de 0 ate 9, sendo a instrucao contarAte expandida
+        escreverSerialn(X);
+        esperar(0.1);
+    }
+    
+    contarDe(10) {              // Conta 10 numeros de forma decrescente
+        escreverSerial(x);
+        esperar(0.1);
+    }
+    
+    ligar(4);                   // Liga, por exemplo, um Led conectado ao pino 4 do Arduino
+    escreverDigital(5, ALTO);   // Você também pode ligar um pino assim
+    esperar(1);
+    
+    desligar(5);                // Desliga o pino 5 do Arduino
+    escreverDigital(5, BAIXO);  // Também pode se desligar um pino assim
     
 }
