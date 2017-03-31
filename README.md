@@ -74,7 +74,7 @@ O Equipe Brasilino:
 **Otacilio Neto** ([github](https://github.com/OtacilioN))
 <br>
 ![](https://github.com/OtacilioN.png?size=230)<br>
-**Idelização e Implementação**
+**Idealização e Implementação**
 
 **Thiago Augusto** ([github](https://github.com/ThiagoAugustoSM))
 <br>
@@ -110,7 +110,7 @@ A biblioteca Brasilino é apoiada pelo Makerama, uma comunidade Maker que apoia 
 Licença:
 ---------------
 
-Brasilino está licenciado sob a licença GPL-3.0, e tem seus exemplos baseados no trabalho do projeto [Arduino] (https://github.com/arduino/Arduino)
+Brasilino está licenciado sob a licença GPL-3.0, e tem seus exemplos baseados no trabalho do projeto [Arduino](https://github.com/arduino/Arduino)
 Sinta-se livre para enviar um email para: brasilino@makerama.com.br
-Veja [Licença] (https://github.com/OtacilioN/Brasilino/blob/master/LICENSE) para mais informações.
+Veja [Licença](https://github.com/OtacilioN/Brasilino/blob/master/LICENSE) para mais informações.
 
