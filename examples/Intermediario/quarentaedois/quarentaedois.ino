@@ -70,8 +70,7 @@ funcao repetir() {
     se(distancia < 15) {            // Confere se o valor de distancia é menor que 15 cm
         escreverSerialn("Cuidado, esta' perto!");   // O comando escreverSerialn pula uma linha após imprimir na tela
         esperar(0.5);               // Espera meio segundo para executar a proxima instrução
-    }
-    senao {                         // Caso não seja menor que 15 cm
+    } senao {                       // Caso não seja menor que 15 cm
         escreverSerialn("Esta' longe ainda!");
         esperarMili(500);           // Faz o programa esperar 500 milissegundos, que equivale a meio segundo
     }
@@ -105,8 +104,7 @@ funcao repetir() {
     
     se(botao == PRESSIONADO) {
         Serial.imprimir("Fui pressionado"); // Voce também pode escrever no Serial monitor assim
-    }
-    senao {
+    } senao {
         Serial.imprimirLinha("Nao fui pressionado"); // Caso queira que pule uma linha ao final
     }
     
