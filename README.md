@@ -125,7 +125,7 @@ O Equipe Brasilino:
 
 **Rômulo César** 
 <br>
-![](http://www.railbeesystem.com/images/team/romulo.gif)<br>
+![](https://railbee.github.io/images/team/romulo.gif)<br>
 **Orientador Acadêmico**
 
 Veja a lista completa de [colaboradores](https://github.com/OtacilioN/Brasilino/graphs/contributors).
