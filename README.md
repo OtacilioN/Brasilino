@@ -150,4 +150,4 @@ Licença:
 Brasilino está licenciado sob a licença GPL-3.0, e tem seus exemplos baseados no trabalho do projeto [Arduino](https://github.com/arduino/Arduino).
 Veja a [licença](https://github.com/OtacilioN/Brasilino/blob/master/LICENSE) para mais informações.
 
-Sinta-se livre para enviar um email para: brasilino@makerama.com.br
+Sinta-se livre para enviar um email para: brasilino@otaciliomaia.com
