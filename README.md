@@ -1,5 +1,4 @@
 # Brasilino
-===========
 
 _Uma **biblioteca** que permite programar em linguagem **Arduino** utilizando comandos facilitados em **PT-BR**._
 
@@ -12,14 +11,13 @@ Nós do Brasilino acreditamos que **quebrando esta barreira inicial, criamos o i
 A brasilino é uma **biblioteca aberta** e conta com a **participação de toda a comunidade**, através das necessidades encontradas pelos usuários, poderemos cada vez mais **criar comandos mais intuitivos e simplificados** de utilizar, promovendo-se assim que a biblioteca facilite cada vez mais a inserção de novos brasileiros.
 
 ## Como utilizar:
----------------
 
 ### 1.1 Instalação através do gerenciador de biblioteca
     Este é o método mais simples e recomendado para a instalação da biblioteca
     - Abra a sua IDE do Arduino, clique em ```Sketch > Incluir Biblioteca > Gerenciar Bibliotecas...```
     - Então na caixa "Refine sua busca..." digite Brasilino e então clique em instalar
     
-    ![Alt Text](https://i.imgur.com/VSSTq1p.gif)
+    ![Alt Text](https://media.giphy.com/media/3ov9k84fnv6iGfdC2A/giphy.gif)
 
 ### 1.2 Instalação manual (Alternativa)
     Mas se preferir, também é possível adicionar manualmente a biblioteca através dos seguintes passos
@@ -35,7 +33,6 @@ A brasilino é uma **biblioteca aberta** e conta com a **participação de toda 
     - Você pode começar com o exemplo "Piscar", que é equivalente ao exemplo "Blink" do Arduino, para isso basta clicar em ```Arquivo > Exemplos > Brasilino > Basicos > Piscar```
     
 ## Tabela de instruções:
----------------
 
 ### Estrutura Geral
 
@@ -114,7 +111,6 @@ Quando chamadas, as funções são responsáveis por executar alguma ação pré
 
 
 ### A Equipe Brasilino:
----------------
 
 **Otacilio Neto** ([github](https://github.com/OtacilioN))
 <br>
@@ -139,21 +135,18 @@ Quando chamadas, as funções são responsáveis por executar alguma ação pré
 Veja a lista completa de [colaboradores](https://github.com/OtacilioN/Brasilino/graphs/contributors).
 
 ## Artigos Relacionados:
----------------
 
 A biblioteca foi apresentada na Mostra Nacional de Robótica em 2016, o que gerou um artigo publicado na mostra virtual, disponível em: http://www.mnr.org.br/mostravirtual/interna.php?id=15321.
 
 O Brasilino encontra-se aberto para ser utilizado em todo tipo de pesquisa e desenvolvimento científico-acadêmico.
 
 ## Apoio:
----------------
 
 A biblioteca Brasilino é apoiada pelo Makerama, uma comunidade Maker que apoia o desenvolvimento de ideias criativas no estado de Pernambuco. Mais informações disponíveis em: http://makerama.com.br
 
 ![](http://makerama.com.br/wp-content/uploads/2016/03/makerama_100.png)<br>
 
 ## Licença:
----------------
 
 Brasilino está licenciado sob a licença GPL-3.0, e tem seus exemplos baseados no trabalho do projeto [Arduino](https://github.com/arduino/Arduino).
 Veja a [licença](https://github.com/OtacilioN/Brasilino/blob/master/LICENSE) para mais informações.
