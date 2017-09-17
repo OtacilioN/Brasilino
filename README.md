@@ -1,4 +1,4 @@
-#Brasilino
+# Brasilino
 ===========
 
 _Uma **biblioteca** que permite programar em linguagem **Arduino** utilizando comandos facilitados em **PT-BR**._
@@ -11,7 +11,7 @@ Nós do Brasilino acreditamos que **quebrando esta barreira inicial, criamos o i
 
 A brasilino é uma **biblioteca aberta** e conta com a **participação de toda a comunidade**, através das necessidades encontradas pelos usuários, poderemos cada vez mais **criar comandos mais intuitivos e simplificados** de utilizar, promovendo-se assim que a biblioteca facilite cada vez mais a inserção de novos brasileiros.
 
-##Como utilizar:
+## Como utilizar:
 ---------------
 
 ### 1.1 Instalação através do gerenciador de biblioteca
@@ -19,7 +19,7 @@ A brasilino é uma **biblioteca aberta** e conta com a **participação de toda 
     - Abra a sua IDE do Arduino, clique em ```Sketch > Incluir Biblioteca > Gerenciar Bibliotecas...```
     - Então na caixa "Refine sua busca..." digite Brasilino e então clique em instalar
     
-    ![](https://i.imgur.com/VSSTq1p.gif)
+    ![Alt Text](https://i.imgur.com/VSSTq1p.gif)
 
 ### 1.2 Instalação manual (Alternativa)
     Mas se preferir, também é possível adicionar manualmente a biblioteca através dos seguintes passos
