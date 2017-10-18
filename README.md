@@ -145,6 +145,10 @@ O Brasilino encontra-se aberto para ser utilizado em todo tipo de pesquisa e des
 
 A biblioteca Brasilino é apoiada pelo Makerama, uma comunidade Maker que apoia o desenvolvimento de ideias criativas no estado de Pernambuco. Mais informações disponíveis em: http://makerama.com.br
 
+"Aprenda a programar o arduino em português" por Saulo Alexandre na [Autocore Robótica](http://autocorerobotica.blog.br/aprenda-programar-o-arduino-em-portugues/amp/)
+
+"Como uma biblioteca permite a inclusão de brasileiros dentro do universo Arduino" por Otacilio Maia no [Medium](https://medium.com/banana-digital/brasilino-a3957af2041d)
+
 ![](http://makerama.com.br/wp-content/uploads/2016/03/makerama_100.png)<br>
 
 ## Licença:
