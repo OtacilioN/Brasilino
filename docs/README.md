@@ -17,8 +17,6 @@ A brasilino é uma **biblioteca aberta** e conta com a **participação de toda 
 Este é o método mais simples e recomendado para a instalação da biblioteca
 - Abra a sua IDE do Arduino, clique em ``Sketch > Incluir Biblioteca > Gerenciar Bibliotecas...``
 - Então na caixa "Refine sua busca..." digite Brasilino e então clique em instalar
-    
-![](https://i.imgur.com/VSSTq1p.gif)
 
 ### 1.2 Instalação manual (Alternativa)
 Mas se preferir, também é possível adicionar manualmente a biblioteca através dos seguintes passos
