@@ -18,6 +18,8 @@ Este é o método mais simples e recomendado para a instalação da biblioteca
 - Abra a sua IDE do Arduino, clique em ``Sketch > Incluir Biblioteca > Gerenciar Bibliotecas...``
 - Então na caixa "Refine sua busca..." digite Brasilino e então clique em instalar
 
+![](https://i.imgur.com/VSSTq1p.gif)
+
 ### 1.2 Instalação manual (Alternativa)
 Mas se preferir, também é possível adicionar manualmente a biblioteca através dos seguintes passos
 - Primeiro baixe a biblioteca clicando [aqui](https://github.com/OtacilioN/Brasilino/archive/v1.0.0.zip)
@@ -31,8 +33,8 @@ Mas se preferir, também é possível adicionar manualmente a biblioteca atravé
 - Então você pode escolher um exemplo da aba de Basicos ou de Sensores, daí basta clicar no exemplo escolhido e iniciar!
 - Você pode começar com o exemplo "Piscar", que é equivalente ao exemplo "Blink" do Arduino, para isso basta clicar em ``Arquivo > Exemplos > Brasilino > Basicos > Piscar``
 
-![](https://i.imgur.com/VSSTq1p.gif)
-    
+
+ 
 ## Tabela de instruções:
 
 ### Estrutura Geral
