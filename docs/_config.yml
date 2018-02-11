@@ -1,2 +1,3 @@
 theme: jekyll-theme-architect
 show_downloads: ["true"]
+description: [Uma biblioteca que permite programar em linguagem Arduino utilizando comandos facilitados em PT-BR.]
