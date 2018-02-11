@@ -115,17 +115,17 @@ Quando chamadas, as funções são responsáveis por executar alguma ação pré
 
 ### A Equipe Brasilino:
 
-**Otacilio Maia** ([GitHub :octocat:](https://github.com/OtacilioN))
+**Otacilio Maia** ([GitHub](https://github.com/OtacilioN))
 <br>
 ![](https://github.com/OtacilioN.png?size=230)<br>
 **Idelização e Implementação**
 
-**Thiago Augusto** ([GitHub :octocat:](https://github.com/ThiagoAugustoSM))
+**Thiago Augusto** ([GitHub](https://github.com/ThiagoAugustoSM))
 <br>
 ![](https://github.com/ThiagoAugustoSM.png?size=230)<br>
 **Validação e Implementação**
 
-**Erick Simoes** ([GitHub :octocat:](https://github.com/ErickSimoes))
+**Erick Simoes** ([GitHub](https://github.com/ErickSimoes))
 <br>
 ![](https://github.com/ErickSimoes.png?size=230)<br>
 **Consultor de formatação e Implementação**
