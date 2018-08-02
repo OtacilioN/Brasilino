@@ -15,9 +15,9 @@
 #define Brasilino_h
 
 #if ARDUINO >= 100
-  #include "Arduino.h"
+#include "Arduino.h"
 #else
-  #include "WProgram.h"
+#include "WProgram.h"
 #endif
 
 //------------------Argumentos Lógicos---------------------
@@ -34,8 +34,8 @@
 #define vazio void //Contribuicao de @alessonrenato atraves de issue
 #define funcao void
 #define procedimento void //Contribuicao de @alessonrenato atraves de issue
-#define nulo NULL //Contribuicao de @alessonrenato atraves de issue
-#define inteiro	int
+#define nulo NULL		  //Contribuicao de @alessonrenato atraves de issue
+#define inteiro int
 #define decimal float
 #define dobro double
 #define caractere char
@@ -54,8 +54,8 @@
 #define enquanto while
 #define para for
 #define sair break
-#define contarAte(y) for(int x = 0; x < y; x++)
-#define contarDe(y) for(int x = y; x > 0; x--)
+#define contarAte(y) for (int x = 0; x < y; x++)
+#define contarDe(y) for (int x = y; x > 0; x--)
 
 //------------------Funções---------------------
 #define imprimir print
@@ -65,7 +65,7 @@
 #define escrever write
 #define ler read
 
-#define esperar(tempo) delay(tempo*1000)
+#define esperar(tempo) delay(tempo * 1000)
 #define esperarMili(tempo) delay(tempo)
 
 //------------------Funções de Comando---------------------
@@ -90,29 +90,31 @@
 #define definirPino(pino, tipo) pinMode(pino, tipo)
 
 //------------------Funções de Serial----------------------
+#if defined(ARDUINO_AVR_GEMMA)
+#else
 void iniciarSerial(void);
 void iniciarSerial(int baud);
 
 #define lerSerial() Serial.read()
 #define escreverSerialn(texto) Serial.println(texto)
 #define escreverSerial(texto) Serial.print(texto)
-
+#endif
 dobro temperatura(int RawADC);
 
 /* Ultrassom */
 /* Este trecho e' baseado na biblioteca ultrassonic.h de J. Rodrigo e emcontra-se disponivel originalmente em: https://github.com/JRodrigoTech/Ultrasonic-HC-SR04 */
-	class Ultrassom
-	{
-		public:
-			Ultrassom(int tp, int ep);
-			long Temporizando();
-			long Medir();
+class Ultrassom
+{
+  public:
+	Ultrassom(int tp, int ep);
+	long Temporizando();
+	long Medir();
 
-		private:
-			int trig_pino;
-			int echo_pino;
-			long tempo_limite;
-			long duracao;
-	};
+  private:
+	int trig_pino;
+	int echo_pino;
+	long tempo_limite;
+	long duracao;
+};
 #endif
 // Não apagar antes disto.
