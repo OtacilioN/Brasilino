@@ -142,6 +142,8 @@ Veja a lista completa de [colaboradores](https://github.com/OtacilioN/Brasilino/
 
 ## Artigos Relacionados:
 
+"Programação Arduino em Português do Brasil" por Otacilio Maia no [Blog FilipeFlop](https://www.filipeflop.com/blog/programacao-arduino-portugues-brasil/)
+
 A biblioteca foi apresentada na Mostra Nacional de Robótica em 2016, o que gerou um artigo publicado na [mostra virtual](http://www.mnr.org.br/mostravirtual/interna.php?id=15321).
 
 "Aprenda a programar o arduino em português" por Saulo Alexandre na [Autocore Robótica](http://autocorerobotica.blog.br/aprenda-programar-o-arduino-em-portugues/amp/)
