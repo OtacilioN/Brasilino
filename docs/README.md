@@ -12,25 +12,26 @@ A brasilino é uma **biblioteca aberta** e conta com a **participação de toda 
 
 ## Documentação
 
-[1. Como utilizar:](/INSTALLING.md)
+[1. Como utilizar:](/INSTALACAO.md)
+
 - Instalação através do gerenciador de biblioteca
 - Instalação manual (Alternativa)
 - Exemplos
 
-[2. Tabela de instruções:](/INSTRUCTION_TABLE.md) <br>
+[2. Tabela de instruções:](/TABELA_DE_INSTRUCOES.md) <br>
+
 - Estrutura Geral
 - Estruturas de Controle
 - Tipos de Dados Comuns
 - Tipos de Dados Lógicos
 - Funções
 
-
 ## A Equipe Brasilino:
 
-| **Otacilio Maia**  | **Thiago Augusto**  | **Erick Simoes** | **Rômulo César** |
-|:----------------------------------------------------:|:---------------------------------------------------------:|:------------------------------------------------------:|:----------------------------------------------------------:|
-|  ![](https://github.com/OtacilioN.png?size=140)<br>  | ![](https://github.com/ThiagoAugustoSM.png?size=140)<br>  |  ![](https://github.com/ErickSimoes.png?size=140)<br>  |  ![](/docs/images/romulo.png?size=100)<br> |
-| **Idelização e Implementação**  | **Validação e Implementação**  |  **Consultor de formatação e Implementação**  | **Orientador Acadêmico**  |
+|                 **Otacilio Maia**                  |                    **Thiago Augusto**                    |                   **Erick Simoes**                   |             **Rômulo César**              |
+| :------------------------------------------------: | :------------------------------------------------------: | :--------------------------------------------------: | :---------------------------------------: |
+| ![](https://github.com/OtacilioN.png?size=140)<br> | ![](https://github.com/ThiagoAugustoSM.png?size=140)<br> | ![](https://github.com/ErickSimoes.png?size=140)<br> | ![](/docs/images/romulo.png?size=100)<br> |
+|           **Idelização e Implementação**           |              **Validação e Implementação**               |     **Consultor de formatação e Implementação**      |         **Orientador Acadêmico**          |
 
 Veja a lista completa de [colaboradores](https://github.com/OtacilioN/Brasilino/graphs/contributors).
 
