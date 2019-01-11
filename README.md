@@ -52,6 +52,13 @@ A biblioteca foi apresentada na Mostra Nacional de Robótica em 2016, o que gero
 
 O Brasilino encontra-se aberto para ser utilizado em todo tipo de pesquisa e desenvolvimento científico-acadêmico.
 
+
+## Conte-nos sobre a sua experiência com o Brasilino!
+
+Já utilizou a biblioteca Brasilino, seja em cursos, workshops ou em projetos pessoais? 
+
+Deixe o seu feedback nesse [form](https://goo.gl/forms/L8dXaenTAJDmBjui1).
+
 ## Apoio:
 
 A biblioteca Brasilino é apoiada pelo Makerama, uma comunidade Maker que apoia o desenvolvimento de ideias criativas no estado de Pernambuco. Mais informações disponíveis em: http://makerama.com.br
