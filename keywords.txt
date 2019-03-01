@@ -6,6 +6,7 @@
 # Funções especiais (KEYWORD1)
 #######################################
 
+Brasilino	KEYWORD1
 iniciarSerial	KEYWORD1
 lerSerial	KEYWORD1
 escreverSerialn	KEYWORD1
