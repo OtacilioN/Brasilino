@@ -16,13 +16,13 @@
 
 #if ARDUINO >= 100
 #include "Arduino.h"
-#else
+#else 
 #include "WProgram.h"
 #endif
 
 //------------------Argumentos Lógicos---------------------
 #define ENTRADA INPUT
-#define SAIDA OUTPUT
+#define SAIR OUTPUT
 #define ALTO HIGH
 #define BAIXO LOW
 #define PRESSIONADO HIGH
@@ -46,8 +46,8 @@
 
 //------------------Laços Lógicos---------------------
 #define se if
-#define senao else
-#define comparar switch
+#define anoser else
+#define como switch
 #define caso case
 
 //------------------Laços de Repetição---------------------
