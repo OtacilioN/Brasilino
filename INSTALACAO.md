@@ -20,3 +20,5 @@ Mas se preferir, também é possível adicionar manualmente a biblioteca atravé
 - Para abrir a aba de exemplos clique em ``Arquivo > Exemplos > Brasilino`` (É preciso descer dentro da aba de exemplos até encontrar "Exemplos de Bibliotecas Personalizadas")
 - Então você pode escolher um exemplo da aba de Basicos ou de Sensores, daí basta clicar no exemplo escolhido e iniciar!
 - Você pode começar com o exemplo "Piscar", que é equivalente ao exemplo "Blink" do Arduino, para isso basta clicar em ``Arquivo > Exemplos > Brasilino > Basicos > Piscar``
+
+
