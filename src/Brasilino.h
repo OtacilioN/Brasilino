@@ -46,7 +46,7 @@
 
 //------------------Laços Lógicos---------------------
 #define se if
-#define senao else
+#define e_se else
 #define comparar switch
 #define caso case
 
