@@ -36,7 +36,8 @@ double temperatura(int valorAnalogico)
 	return temp;
 }
 
-/* ULTRASSOM */
+
+/* ULTRASSOM 
 Ultrassom::Ultrassom(int tp, int ep)
 {
 	pinMode(tp, OUTPUT);
@@ -66,5 +67,5 @@ long Ultrassom::Medir()
 {
 	Temporizando();
 	return duracao / 29 / 2;
-}
+}*/
 // Não apagar antes disso

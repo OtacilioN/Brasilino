@@ -13,7 +13,7 @@
 
 #ifndef Brasilino_h
 #define Brasilino_h
-
+#include "Ultrassom/BrasilinoUltrassom.h"
 #if ARDUINO >= 100
 #include "Arduino.h"
 #else
@@ -103,6 +103,7 @@ dobro temperatura(int RawADC);
 
 /* Ultrassom */
 /* Este trecho e' baseado na biblioteca ultrassonic.h de J. Rodrigo e emcontra-se disponivel originalmente em: https://github.com/JRodrigoTech/Ultrasonic-HC-SR04 */
+/*
 class Ultrassom
 {
   public:
@@ -115,6 +116,6 @@ class Ultrassom
 	int echo_pino;
 	long tempo_limite;
 	long duracao;
-};
+};*/
 #endif
 // Não apagar antes disto.
