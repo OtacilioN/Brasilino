@@ -11,6 +11,23 @@ Com o baixo índice de proficiência em língua inglesa apresentado pelo Brasil,
 
 Nós do Brasilino acreditamos que **quebrando esta barreira inicial, criamos o incentivo** para que estes brasileros possam **ter o primeiro contato com a plataforma Arduino**, desenvolvendo assim suas próprias soluções, e a partir deste primeiro contato, os mesmos possam **quebrar o paradigma de que programar é difícil**, e quando apenas o idioma for a última barreira, através de uma **migração gradual**, da programação em Brasilino para a programaçao em Arduino, a barreira do idioma possa por fim ser removida.
 
+Veja como é fácil usar nesse exemplo de piscar uma LED:
+
+```c++
+#include <Brasilino.h>
+
+funcao configurar() {
+    saida(13);
+}
+
+funcao repetir() {
+    ligar(13);
+    esperar(1);
+    desligar(13);
+    esperar(1);
+}
+```
+
 A brasilino é uma **biblioteca aberta** e conta com a **participação de toda a comunidade**, através das necessidades encontradas pelos usuários, poderemos cada vez mais **criar comandos mais intuitivos e simplificados** de utilizar, promovendo-se assim que a biblioteca facilite cada vez mais a inserção de novos brasileiros.
 
 Se este é o seu primeiro contato com Open Source, aprenda a [como contribuir com projetos Open Source.](https://github.com/Roshanjossey/first-contributions/blob/master/translations/README.pt_br.md)
