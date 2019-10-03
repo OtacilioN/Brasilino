@@ -118,3 +118,12 @@ class Ultrassom
 };
 #endif
 // Não apagar antes disto.
+
+//------------------Comparadores----------------------
+#define igual ==
+#define maior >
+#define maior_igual >=
+#define menor <
+#define menor_igual <=
+#define logico_e &&
+#define logico_ou ||
