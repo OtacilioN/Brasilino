@@ -116,8 +116,6 @@ class Ultrassom
 	long tempo_limite;
 	long duracao;
 };
-#endif
-// Não apagar antes disto.
 
 //------------------Comparadores----------------------
 #define igual ==
@@ -127,3 +125,6 @@ class Ultrassom
 #define menor_igual <=
 #define logico_e &&
 #define logico_ou ||
+
+#endif
+// Não apagar antes disto.
