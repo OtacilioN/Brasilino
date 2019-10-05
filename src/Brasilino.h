@@ -42,7 +42,7 @@
 #define logico boolean
 #define constante const
 #define longo long
-#define modulo unsigned
+#define positivo unsigned		// Contribuição de @viniciossilva811 através de issue
 
 //------------------Laços Lógicos---------------------
 #define se if
