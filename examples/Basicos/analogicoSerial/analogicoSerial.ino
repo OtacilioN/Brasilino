@@ -26,7 +26,7 @@ funcao configurar() {
 // A funcao repetir executa para sempre
 funcao repetir() {
     // Lê o valor analogico retornado por um sensor no pino A0
-    inteiro valorDoSensor = lerAnalogico(A0); 
+    inteiro valorDoSensor = lerPinoAnalogico(A0); 
     // Escreve no SerialMonitor o valor armazenado na variável do tipo inteiro
     escreverSerialn(valorDoSensor); 
     esperar(0.5); // espera meio segundo

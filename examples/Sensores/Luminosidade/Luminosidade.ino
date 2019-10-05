@@ -26,7 +26,7 @@ funcao configurar() {
 
 funcao repetir() {
     
-    luminosidadeAtual = lerAnalogico(ldr); // Realizar a leitura em nível analógico do LDR no pino A1
+    luminosidadeAtual = lerPinoAnalogico(ldr); // Realizar a leitura em nível analógico do LDR no pino A1
     
     // Analisa a luminosidade e emite opiniao com base na luminosidade media definida
     se(luminosidadeAtual > luminosidadeMedia) { // Caso seja maior que

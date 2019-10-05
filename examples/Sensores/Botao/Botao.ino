@@ -37,7 +37,7 @@ funcao configurar() {
 
 funcao repetir() {
     // Le o estado do botão conectado ao pino 2 e salva na variável
-    estadoBotao = lerDigital(botao);
+    estadoBotao = lerPinoDigital(botao);
     
     // Confere se o botao esta pressionado
     // Caso esteja liga o led

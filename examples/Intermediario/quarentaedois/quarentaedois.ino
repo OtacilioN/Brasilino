@@ -75,7 +75,7 @@ funcao repetir() {
         esperarMili(500);           // Faz o programa esperar 500 milissegundos, que equivale a meio segundo
     }
     
-    temperaturaAtual = temperatura(lerAnalogico(A0));   // Realiza a leitura da temperatura de um termistor de 10k no pino A0
+    temperaturaAtual = temperatura(lerPinoAnalogico(A0));   // Realiza a leitura da temperatura de um termistor de 10k no pino A0
     
     contarAte(10) {             // Conta 10 numeros, do 0 até o 9
         escreverSerial(x);      // Escreve os numeros sendo contados na variavel x
@@ -100,7 +100,7 @@ funcao repetir() {
     escreverDigital(5, BAIXO);  // Também pode se desligar um pino assim
     esperar(1);
     
-    botao = lerDigital(2);      // Salva o valor da leitura digital do pino 2 na variavel botao
+    botao = lerPinoDigital(2);      // Salva o valor da leitura digital do pino 2 na variavel botao
     
     se(botao == PRESSIONADO) {
         Serial.imprimir("Fui pressionado"); // Voce também pode escrever no Serial monitor assim
