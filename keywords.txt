@@ -86,4 +86,4 @@ caractere	LITERAL1
 logico	LITERAL1
 constante	LITERAL1
 longo	LITERAL1
-modulo	LITERAL1
+positivo	LITERAL1
