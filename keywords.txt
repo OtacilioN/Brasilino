@@ -29,8 +29,8 @@ ligar	KEYWORD2
 desligar	KEYWORD2
 escreverAnalogico	KEYWORD2
 escreverDigital	KEYWORD2
-lerDigital	KEYWORD2
-lerAnalogico	KEYWORD2
+lerPinoDigital	KEYWORD2
+lerPinoAnalogico	KEYWORD2
 saida	KEYWORD2
 entrada	KEYWORD2
 entradaAlta	KEYWORD2
@@ -86,4 +86,4 @@ caractere	LITERAL1
 logico	LITERAL1
 constante	LITERAL1
 longo	LITERAL1
-modulo	LITERAL1
+positivo	LITERAL1
