@@ -38,6 +38,17 @@ definirPino	KEYWORD2
 temperatura	KEYWORD2
 Temporizando	KEYWORD2
 Medir	KEYWORD2
+modulo	KEYWORD2
+restringir	KEYWORD2
+mapear	KEYWORD2
+maior	KEYWORD2
+menor	KEYWORD2
+potenciar	KEYWORD2
+quadrado	KEYWORD2
+raizQuadrada	KEYWORD2
+seno	KEYWORD2
+cosseno	KEYWORD2
+tangente	KEYWORD2
 
 
 #########################################

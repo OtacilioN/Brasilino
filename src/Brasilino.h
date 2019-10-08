@@ -102,6 +102,20 @@ void iniciarSerial(int baud);
 #endif
 dobro temperatura(int RawADC);
 
+//------------------Funções Matemáticas ----------------------
+
+#define modulo(valor) abs(valor)
+#define restringir(valor, a, b) constrain(valor, a, b)
+#define mapear(valor, deMenor, deMaior, paraMenor, paraMaior)
+#define maior(a, b) max(a, b)
+#define menor(a, b) min(a, b)
+#define potenciar(a, b) pow(a, b)
+#define quadrado(valor) sq(valor)
+#define raizQuadrada(valor) sqrt(valor)
+#define seno(valor) sin(valor)
+#define cosseno(valor) cos(valor)
+#define tangente(valor) tan(valor)
+
 /* Ultrassom */
 /* Este trecho e' baseado na biblioteca ultrassonic.h de J. Rodrigo e emcontra-se disponivel originalmente em: https://github.com/JRodrigoTech/Ultrasonic-HC-SR04 */
 class Ultrassom
