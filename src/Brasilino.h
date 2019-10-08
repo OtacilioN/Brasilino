@@ -52,6 +52,7 @@
 
 //------------------Laços de Repetição---------------------
 #define enquanto while
+#define fazer do	// Contribuição de @ViniciosSilva811
 #define para for
 #define sair break
 #define contarAte(y) for (int x = 0; x < y; x++)
