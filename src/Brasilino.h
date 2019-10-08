@@ -116,5 +116,23 @@ class Ultrassom
 	long tempo_limite;
 	long duracao;
 };
+
+//------------------Funções de Configuração----------------
+#define PARA_FRENTE 1
+#define PARA_TRAS   2
+
+class MotorDC
+{
+	public:
+		MotorDC(uint8_t pino_A, uint8_t pino_B, uint8_t pino_pwm);
+		void configurarVelocidade(uint8_t valor = 255);
+		void girar(uint8_t sentido);
+		void parar();
+	private:
+		uint8_t _pino_A, _pino_B, _pino_pwm;
+		uint8_t _valor;
+		uint8_t _sentido;
+};
+
 #endif
 // Não apagar antes disto.

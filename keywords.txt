@@ -12,6 +12,7 @@ lerSerial	KEYWORD1
 escreverSerialn	KEYWORD1
 escreverSerial	KEYWORD1
 Ultrassom	KEYWORD1
+MotorDC	KEYWORD1
 
 
 #######################################
@@ -38,7 +39,9 @@ definirPino	KEYWORD2
 temperatura	KEYWORD2
 Temporizando	KEYWORD2
 Medir	KEYWORD2
-
+girar	KEYWORD2
+configurarVelocidade	KEYWORD2
+parar	KEYWORD2
 
 #########################################
 # Estruturas específicas (KEYWORD3)
@@ -87,3 +90,5 @@ logico	LITERAL1
 constante	LITERAL1
 longo	LITERAL1
 positivo	LITERAL1
+PARA_FRENTE	LITERAL1
+PARA_TRAS	LITERAL1

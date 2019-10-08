@@ -67,4 +67,40 @@ long Ultrassom::Medir()
 	Temporizando();
 	return duracao / 29 / 2;
 }
+
+MotorDC::MotorDC(uint8_t pino_A, uint8_t pino_B, uint8_t pino_pwm) {
+	_pino_A = pino_A;
+	_pino_B = pino_B;
+	_pino_pwm = pino_pwm;
+
+	pinMode(_pino_A, OUTPUT);
+	pinMode(_pino_B, OUTPUT);
+	pinMode(_pino_pwm, OUTPUT);
+}
+
+void MotorDC::configurarVelocidade(uint8_t valor = 255) {
+	_valor = valor;
+	analogWrite(_pino_pwm, _valor);
+}
+
+void MotorDC::girar(uint8_t sentido) {
+	_sentido = sentido;
+
+	switch (_sentido) {
+		case PARA_FRENTE:
+			digitalWrite(_pino_A, HIGH);
+			digitalWrite(_pino_B, LOW);
+			break;
+		case PARA_TRAS:
+			digitalWrite(_pino_A, LOW);
+			digitalWrite(_pino_B, HIGH);
+			break;
+	}
+}
+
+void MotorDC::parar() {
+	digitalWrite(_pino_A, LOW);
+	digitalWrite(_pino_B, LOW);
+}
+
 // Não apagar antes disso
