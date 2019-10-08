@@ -105,7 +105,7 @@ dobro temperatura(int RawADC);
 // Contibuição de @ViniciosSilva811
 #define modulo(valor) abs(valor)
 #define restringir(valor, a, b) constrain(valor, a, b)
-#define mapear(valor, deMenor, deMaior, paraMenor, paraMaior)
+#define mapear(valor, deMenor, deMaior, paraMenor, paraMaior) map(valor, deMenor, deMaior, paraMenor, paraMaior)
 #define maior(a, b) max(a, b)
 #define menor(a, b) min(a, b)
 #define potenciar(a, b) pow(a, b)
