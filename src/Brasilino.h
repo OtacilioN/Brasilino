@@ -102,7 +102,7 @@ void iniciarSerial(int baud);
 dobro temperatura(int RawADC);
 
 //------------------Funções Matemáticas ----------------------
-
+// Contibuição de @ViniciosSilva811
 #define modulo(valor) abs(valor)
 #define restringir(valor, a, b) constrain(valor, a, b)
 #define mapear(valor, deMenor, deMaior, paraMenor, paraMaior)
