@@ -117,7 +117,8 @@ class Ultrassom
 	long duracao;
 };
 
-//------------------Funções de Configuração----------------
+//------------------ Classe MotorDC ----------------
+
 #define PARA_FRENTE 1
 #define PARA_TRAS   2
 

@@ -68,6 +68,7 @@ long Ultrassom::Medir()
 	return duracao / 29 / 2;
 }
 
+/* Motor DC */
 MotorDC::MotorDC(uint8_t pino_A, uint8_t pino_B, uint8_t pino_pwm) {
 	_pino_A = pino_A;
 	_pino_B = pino_B;
