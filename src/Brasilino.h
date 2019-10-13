@@ -52,10 +52,20 @@
 
 //------------------Laços de Repetição---------------------
 #define enquanto while
+#define fazer do	// Contribuição de @ViniciosSilva811
 #define para for
 #define sair break
 #define contarAte(y) for (int x = 0; x < y; x++)
 #define contarDe(y) for (int x = y; x > 0; x--)
+
+//------------------Comparadores----------------------
+#define igual ==
+#define maior >
+#define maior_igual >=
+#define menor <
+#define menor_igual <=
+#define logico_e &&
+#define logico_ou ||
 
 //------------------Funções---------------------
 #define imprimir print
