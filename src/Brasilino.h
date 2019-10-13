@@ -42,7 +42,7 @@
 #define logico boolean
 #define constante const
 #define longo long
-#define positivo unsigned		// Contribuição de @viniciossilva811 através de issue
+#define positivo unsigned // Contribuição de @ViniciosSilva811 e @r4faelrs através de issue
 
 //------------------Laços Lógicos---------------------
 #define se if
@@ -52,6 +52,7 @@
 
 //------------------Laços de Repetição---------------------
 #define enquanto while
+#define fazer do	// Contribuição de @ViniciosSilva811
 #define para for
 #define sair break
 #define contarAte(y) for (int x = 0; x < y; x++)
@@ -116,5 +117,15 @@ class Ultrassom
 	long tempo_limite;
 	long duracao;
 };
+
+//------------------Comparadores----------------------
+#define igual ==
+#define maior >
+#define maior_igual >=
+#define menor <
+#define menor_igual <=
+#define logico_e &&
+#define logico_ou ||
+
 #endif
 // Não apagar antes disto.
