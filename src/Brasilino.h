@@ -43,6 +43,7 @@
 #define constante const
 #define longo long
 #define positivo unsigned // Contribuição de @ViniciosSilva811 e @r4faelrs através de issue
+#define modulo positivo   // Contribuição de @ViniciosSilva811 e @r4faelrs através de issue
 
 //------------------Laços Lógicos---------------------
 #define se if
@@ -104,7 +105,7 @@ dobro temperatura(int RawADC);
 
 //------------------Funções Matemáticas ----------------------
 // Contibuição de @ViniciosSilva811
-#define modulo(valor) abs(valor)
+#define modular(valor) abs(valor)
 #define restringir(valor, a, b) constrain(valor, a, b)
 #define mapear(valor, deMenor, deMaior, paraMenor, paraMaior) map(valor, deMenor, deMaior, paraMenor, paraMaior)
 #define maior(a, b) max(a, b)
