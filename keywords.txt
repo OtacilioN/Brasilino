@@ -38,7 +38,7 @@ definirPino	KEYWORD2
 temperatura	KEYWORD2
 Temporizando	KEYWORD2
 Medir	KEYWORD2
-modulo	KEYWORD2
+modular	KEYWORD2
 restringir	KEYWORD2
 mapear	KEYWORD2
 maior	KEYWORD2
@@ -98,3 +98,4 @@ logico	LITERAL1
 constante	LITERAL1
 longo	LITERAL1
 positivo	LITERAL1
+modulo	LITERAL1
