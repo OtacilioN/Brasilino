@@ -42,6 +42,18 @@ Medir	KEYWORD2
 girar	KEYWORD2
 configurarVelocidade	KEYWORD2
 parar	KEYWORD2
+modular	KEYWORD2
+restringir	KEYWORD2
+mapear	KEYWORD2
+maior	KEYWORD2
+menor	KEYWORD2
+potenciar	KEYWORD2
+quadrado	KEYWORD2
+raizQuadrada	KEYWORD2
+seno	KEYWORD2
+cosseno	KEYWORD2
+tangente	KEYWORD2
+
 
 #########################################
 # Estruturas específicas (KEYWORD3)
@@ -91,5 +103,6 @@ logico	LITERAL1
 constante	LITERAL1
 longo	LITERAL1
 positivo	LITERAL1
+modulo	LITERAL1
 PARA_FRENTE	LITERAL1
 PARA_TRAS	LITERAL1

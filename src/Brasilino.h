@@ -43,6 +43,7 @@
 #define constante const
 #define longo long
 #define positivo unsigned // Contribuição de @ViniciosSilva811 e @r4faelrs através de issue
+#define modulo positivo   // Contribuição de @ViniciosSilva811 e @r4faelrs através de issue
 
 //------------------Laços Lógicos---------------------
 #define se if
@@ -110,6 +111,20 @@ void iniciarSerial(int baud);
 #define escreverSerial(texto) Serial.print(texto)
 #endif
 dobro temperatura(int RawADC);
+
+//------------------Funções Matemáticas ----------------------
+// Contibuição de @ViniciosSilva811
+#define modular(valor) abs(valor)
+#define restringir(valor, a, b) constrain(valor, a, b)
+#define mapear(valor, deMenor, deMaior, paraMenor, paraMaior) map(valor, deMenor, deMaior, paraMenor, paraMaior)
+#define maior(a, b) max(a, b)
+#define menor(a, b) min(a, b)
+#define potenciar(a, b) pow(a, b)
+#define quadrado(valor) sq(valor)
+#define raizQuadrada(valor) sqrt(valor)
+#define seno(valor) sin(valor)
+#define cosseno(valor) cos(valor)
+#define tangente(valor) tan(valor)
 
 /* Ultrassom */
 /* Este trecho e' baseado na biblioteca ultrassonic.h de J. Rodrigo e emcontra-se disponivel originalmente em: https://github.com/JRodrigoTech/Ultrasonic-HC-SR04 */
