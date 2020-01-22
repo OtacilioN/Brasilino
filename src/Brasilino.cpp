@@ -82,7 +82,7 @@ Motor::Motor(uint8_t pino_A, uint8_t pino_B, uint8_t pino_pwm) {
 void Motor::configurarVelocidade(uint8_t velocidade) {
 	_velocidade = velocidade;
 
-	analogWrite(_pwm_pino, _velocidade);
+	analogWrite(_pino_pwm, _velocidade);
 }
 
 void Motor::girar(uint8_t sentido) {
