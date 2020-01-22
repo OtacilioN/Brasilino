@@ -80,6 +80,9 @@
 #define lerDigital(pino) digitalRead(pino)
 #define lerAnalogico(pino) analogRead(pino)
 
+#define lerPinoDigital(pino) digitalRead(pino)
+#define lerPinoAnalogico(pino) analogRead(pino)
+
 //------------------Funções Principais---------------------
 #define configurar setup
 #define repetir loop

@@ -49,6 +49,8 @@ raizQuadrada	KEYWORD2
 seno	KEYWORD2
 cosseno	KEYWORD2
 tangente	KEYWORD2
+lerPinoDigital	KEYWORD2
+lerPinoAnalogico	KEYWORD2
 
 
 #########################################
