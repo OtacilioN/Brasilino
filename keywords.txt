@@ -12,6 +12,7 @@ lerSerial	KEYWORD1
 escreverSerialn	KEYWORD1
 escreverSerial	KEYWORD1
 Ultrassom	KEYWORD1
+Motor	KEYWORD1
 
 
 #######################################
@@ -49,6 +50,9 @@ raizQuadrada	KEYWORD2
 seno	KEYWORD2
 cosseno	KEYWORD2
 tangente	KEYWORD2
+configurarVelocidade	KEYWORD2
+girar	KEYWORD2
+parar	KEYWORD2
 
 
 #########################################
@@ -100,3 +104,5 @@ constante	LITERAL1
 longo	LITERAL1
 positivo	LITERAL1
 modulo	LITERAL1
+PARA_FRENTE	LITERAL1
+PARA_TRAS	LITERAL1
