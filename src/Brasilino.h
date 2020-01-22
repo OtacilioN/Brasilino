@@ -140,6 +140,9 @@ class Ultrassom
 	que se encontra em https://github.com/ViniciosSilva811/Stubborn_DCMotor 
 */
 
+#define PARA_FRENTE 1
+#define PARA_TRAS   2
+
 class Motor
 {
 	public:
