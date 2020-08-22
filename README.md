@@ -1,6 +1,5 @@
 # Brasilino
 
-[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![License: GPL3](https://img.shields.io/badge/License-GPL3-green.svg)](https://opensource.org/licenses/GPL-3.0)
 
 _Uma **biblioteca** que permite programar em linguagem **Arduino** utilizando comandos facilitados em **PT-BR**._
