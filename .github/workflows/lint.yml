@@ -1,0 +1,30 @@
+name: Arduino Lint
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  workflow_dispatch:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: arduino/arduino-lint-action
+        uses: arduino/arduino-lint-action@v1.0.0
+        with:
+          #path: 
+          #version: 
+          compliance: strict
+          library-manager: update
+          project-type: library # all
+          #recursive: false
+          #report-file: ${{ env.REPORT_FILE_PATH }}
+          #verbose: true
+          #official: false
+          #token: ${{ github.token }}
