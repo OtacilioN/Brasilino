@@ -21,6 +21,7 @@
 #endif
 
 //------------------Argumentos Lógicos---------------------
+#define ENTRADA_ALTA INPUT_PULLUP
 #define ENTRADA INPUT
 #define SAIDA OUTPUT
 #define ALTO HIGH
