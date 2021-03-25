@@ -1,0 +1,78 @@
+name: Arduino Compile
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+    
+  workflow_dispatch:
+
+jobs:
+  # This is the name of the job - can be whatever.
+  test-matrix:
+
+    # Here we tell GitHub that the jobs must be determined
+    # dynamically depending on a matrix configuration.
+    strategy:
+      matrix:
+        # The matrix will produce one job for each configuration
+        # parameter of type `arduino-platform`, in this case a
+        # total of 2.
+        arduino-platform: ["arduino:avr"]
+        # This is usually optional but we need to statically define the
+        # FQBN of the boards we want to test for each platform. In the
+        # future the CLI might automatically detect and download the core
+        # needed to compile against a certain FQBN, at that point the
+        # following `include` section will be useless.
+        include:
+          # This works like this: when the platformn is "arduino:samd", the
+          # variable `fqbn` is set to "arduino:samd:nano_33_iot".
+          - arduino-platform: "arduino:avr"
+            fqbn: "arduino:avr:uno"
+
+    # This is the platform GitHub will use to run our workflow, we
+    # pick Windows for no particular reason.
+    runs-on: ubuntu-latest
+
+    # This is the list of steps this job will run.
+    steps:
+      # First of all, we clone the repo using the `checkout` action.
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Instalar Compactador Zip
+        uses: montudor/action-zip@v0.1.1
+
+      - name: Compacta Brasilino.zip
+        run: zip -qq -r src.zip src
+        working-directory: ${{ github.workspace }}
+
+      # We use the `arduino/setup-arduino-cli` action to install and
+      # configure the Arduino CLI on the system.
+      - name: Setup Arduino CLI
+        uses: arduino/setup-arduino-cli@v1.1.1
+
+      # We then install the platform, which one will be determined
+      # dynamically by the build matrix.
+      - name: Instalar Plataforma Arduino
+        run: |
+          arduino-cli core update-index
+          arduino-cli core install ${{ matrix.arduino-platform }}
+
+      # Habilitar a instalação não segura da biblioteca Brasilino local
+      # é necessário criar um config file para armazenar o valor da flag
+      - name: Habilitar instalação não segura
+        run: |
+          arduino-cli config init 
+          arduino-cli config set library.enable_unsafe_install true
+      
+      # Instalação da Biblioteca Brasilino Local
+      - name: Instalação Brasilino
+        run: |
+          arduino-cli lib install --zip-path ${{ github.workspace }}/src.zip
+    
+      # Finally, we compile the sketch, using the FQBN that was set
+      # in the build matrix.
+      - name: Compile Sketch
+        run: arduino-cli compile --fqbn ${{ matrix.fqbn }} ./examples/Basicos/Piscar
