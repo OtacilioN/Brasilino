@@ -103,7 +103,6 @@ jobs:
       # na construção da matrix
       - name: Compile Sketch
         run: |
-          arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Atuadores/Motor
           arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Basicos/Piscar
           arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Basicos/analogicoSerial
           arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Intermediario/quarentaedois
@@ -111,3 +110,4 @@ jobs:
           arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Sensores/Luminosidade
           arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Sensores/Temperatura
           arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Sensores/Ultrassom-HC-SR04
+          arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Atuadores/Motor
