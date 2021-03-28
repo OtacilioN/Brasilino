@@ -12,6 +12,8 @@
   por Ladson Gomes (github.com/ladsong)
   Baseado no código de exemplo da biblioteca arduino
   por Nicholas Zambetti <http://www.zambetti.com>
+  Adaptado para comando escreverSerialEspecial() e escreverSerialnEspecial()
+  por Steffano Pereira (github.com/steffanop)
 
 */
 #include <Brasilino.h>
@@ -38,7 +40,7 @@ funcao repetir() {
   escreverSerial(esteByte);
 
   escreverSerial(", dec: ");
-  // escreve o valor como uma string codificada em ASCII em decimal ( base 10).
+  // escreve o valor como uma string codificada em ASCII em decimal (base 10).
   // Decimal é o formato padrão para as funções escreverSerial() e escreverSerialn().
   // então nenhum modificador é necessário:
 
@@ -46,20 +48,19 @@ funcao repetir() {
   // Mas você pode declarar o modificador para decimal, se quiser.
   // dessa forma também funciona se você descomentar:
 
-  // escreverSerial(esteByte, DEC);
-
+  // escreverSerialEspecial(esteByte, DEC);
 
   escreverSerial(", hex: ");
-  // escreve o valor como uma cadeia de caracteres em hexadecimal (base 16):
-  escreverSerial(esteByte, HEX);
+  // escreve o valor como uma cadeia de caracteres em HEXadecimal (base 16):
+  escreverSerialEspecial(esteByte, HEX);
 
   escreverSerial(", oct: ");
-  // escreve o valor como uma cadeia de caracteres em octal (base 8)
-  escreverSerial(esteByte, OCT);
+  // escreve o valor como uma cadeia de caracteres em OCTal (base 8)
+  escreverSerialEspecial(esteByte, OCT);
 
   escreverSerial(", bin: ");
-  // escreve o valor como uma cadeia de caracteres binária(base 2) junto com a quebra de final de linha:
-  escreverSerialn(esteByte, BIN);
+  // escreve o valor como uma cadeia de caracteres BINária(base 2) junto com a quebra de final de linha:
+  escreverSerialnEspecial(esteByte, BIN);
 
   // se imprimir o ultimo caracter visivel '~' ou 126, pare:
   se (esteByte == 126) {    // também é válido usar se(esteByte == '~') {
