@@ -29,14 +29,14 @@ funcao repetir() {
     
     // Inicia uma contagem repetindo de 0 até o valor escolhido 255
     contarAte(255) {
-        escreverAnalogico(luminosidade); // Faz a luminosidade do led assumir o valor da variável
+        escreverAnalogico(led, luminosidade); // Faz a luminosidade do led assumir o valor da variável
         luminosidade++; // Aumenta em uma unidade o valor da luminosidade
         esperarMili(30); // Espera 30 milissegundos
     }
     
     // Inicia uma contagem repetindo de 255 que é o valor escolhido até 0
     contarDe(255) {
-        escreverAnalogico(luminosidade); // Faz a luminosidade do led assumir o valor da variável
+        escreverAnalogico(led, luminosidade); // Faz a luminosidade do led assumir o valor da variável
         luminosidade--; // Diminui em uma unidade o valor da luminosidade
         esperarMili(30); // Espera 30 milissegundos
     }
