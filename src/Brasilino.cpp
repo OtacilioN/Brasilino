@@ -15,6 +15,7 @@
 #include <math.h>
 
 #if defined(ARDUINO_AVR_GEMMA)
+#elif defined(ARDUINO_AVR_DIGISPARK)
 #else
 void iniciarSerial(void)
 {
