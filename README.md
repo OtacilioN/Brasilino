@@ -2,6 +2,7 @@
 
 [![License: GPL3](https://img.shields.io/badge/License-GPL3-green.svg)](https://opensource.org/licenses/GPL-3.0)
 [![Arduino Lint](https://github.com/OtacilioN/Brasilino/workflows/Arduino%20Lint/badge.svg)](https://github.com/OtacilioN/Brasilino/actions?workflow=Arduino+Lint)
+[![Arduino Compile](https://github.com/OtacilioN/Brasilino/actions/workflows/compile.yml/badge.svg)](https://github.com/OtacilioN/Brasilino/actions/workflows/compile.yml)
 
 _Uma **biblioteca** que permite programar em linguagem **Arduino** utilizando comandos facilitados em **PT-BR**._
 
