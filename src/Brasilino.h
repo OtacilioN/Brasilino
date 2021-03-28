@@ -100,6 +100,8 @@ void iniciarSerial(int baud);
 #define lerSerial() Serial.read()
 #define escreverSerialn(texto) Serial.println(texto)
 #define escreverSerial(texto) Serial.print(texto)
+#define escreverSerialnEspecial(texto, formato) Serial.println(texto, formato)
+#define escreverSerialEspecial(texto, formato) Serial.print(texto, formato)
 #endif
 dobro temperatura(int RawADC);
 
