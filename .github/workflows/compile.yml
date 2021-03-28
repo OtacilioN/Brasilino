@@ -9,19 +9,27 @@ on:
   workflow_dispatch:
 
 jobs:
-  # This is the name of the job - can be whatever.
-  test-placas:
+  # Nome do trabalho a ser realizado
+  compile:
 
-    # Here we tell GitHub that the jobs must be determined
-    # dynamically depending on a matrix configuration.
     strategy:
+      # Estratégia em Matrix, pois vamos trabalhar com diversos tipos de placa
       matrix:
 
+        #Aqui a escolha de placas se dá pelos nomes das placas, não há necessidade
+        #de um nome específico, funciona apenas como identificação
         boards: [arduino-uno, arduino-mega, arduino-leonardo, arduino-gemma]
 
         include:
-          # This works like this: when the platformn is "arduino:samd", the
-          # variable `fqbn` is set to "arduino:samd:nano_33_iot".
+          # Aqui iremos setar algumas informações necessárias para cada placa
+          #
+          # Variável arduino-platform:
+          # Neste caso se refere diretamente a variável da plataforma em que a placa é trabalhada
+          # As placas padrões da Plataforma Arduino são conhecidas como arduino:avr devido sua 
+          # arquitetura de microcontroladores AVR
+          #
+          # Variável fqbn:
+          # Se refere diretamente a escolha da placa ao qual você deseja realizar um trabalho
           - boards: arduino-uno
             arduino-platform: "arduino:avr"
             fqbn: "arduino:avr:uno"
@@ -38,30 +46,32 @@ jobs:
             arduino-platform: "arduino:avr"
             fqbn: "arduino:avr:gemma"
             
-    # This is the platform GitHub will use to run our workflow, we
-    # pick Windows for no particular reason.
+    # Plataforma em que iremos rodar o workflow
     runs-on: ubuntu-latest
 
-    # This is the list of steps this job will run.
+    # Lista de trabalhos a serem realizados
     steps:
-      # First of all, we clone the repo using the `checkout` action.
+      # Vamos utilizar a Action 'checkout' para trabalhar com os clones do repositório
+      # requisito da action setup-arduino-cli
       - name: Checkout
         uses: actions/checkout@master
 
-      - name: Instalar Compactador Zip
+      # É necessário Compactar a pasta src (fonte da biblioteca)
+      # é uma necessidade do arduino-cli para instalar e usar a biblioteca Brasilino.h.
+      - name: Instalação Compactador Zip
         uses: montudor/action-zip@v0.1.1
 
       - name: Compacta Brasilino.zip
         run: zip -qq -r src.zip src
         working-directory: ${{ github.workspace }}
 
-      # We use the `arduino/setup-arduino-cli` action to install and
-      # configure the Arduino CLI on the system.
-      - name: Setup Arduino CLI
+      # Nós usamos a Action 'setup-arduino-cli' para instalar e configurar a 'arduino-cli'
+      # a ferramenta/Action que irá realizar a compilação dos sketches para as placas 
+      - name: Instalação Arduino CLI
         uses: arduino/setup-arduino-cli@v1.1.1
 
-      # We then install the platform, which one will be determined
-      # dynamically by the build matrix.
+      # Nós fazemos a instalação da plataforma que irá dinâmicamente ser construído 
+      # pela estratégia da matrix
       - name: Instalar Plataforma Arduino
         run: |
           arduino-cli core update-index
@@ -80,6 +90,7 @@ jobs:
           arduino-cli lib install --zip-path ${{ github.workspace }}/src.zip
     
       # Finally, we compile the sketch, using the FQBN that was set
-      # in the build matrix.
+      # Nós finalmente, compilamos os sketch, usando a flag --fqbn que é setada
+      # na construção da matrix
       - name: Compile Sketch
         run: arduino-cli compile --fqbn ${{ matrix.fqbn }} ./examples/Basicos/Piscar
