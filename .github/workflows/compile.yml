@@ -20,7 +20,7 @@ jobs:
 
         #Aqui a escolha de placas se dá pelos nomes das placas, não há necessidade
         #de um nome específico, funciona apenas como identificação
-        boards: [arduino-uno, arduino-mega, arduino-leonardo, arduino-gemma]
+        boards: [arduino-uno, arduino-mega, arduino-leonardo, arduino-gemma, micronucleus-franzininho]
 
         include:
           # Aqui iremos setar algumas informações necessárias para cada placa
@@ -47,6 +47,12 @@ jobs:
           - boards: arduino-gemma
             arduino-platform: "arduino:avr"
             fqbn: "arduino:avr:gemma"
+          
+          - boards: micronucleus-franzininho
+            arduino-platform: "digistump:avr"
+            flag-additional-urls: "--additional-urls http://digistump.com/package_digistump_index.json"
+            fqbn: "digistump:avr:digispark-tiny"
+            flag-programmer: "--programmer micronucleus"
             
     # Plataforma em que iremos rodar o workflow
     runs-on: ubuntu-latest
@@ -76,8 +82,9 @@ jobs:
       # pela estratégia da matrix
       - name: Instalar Plataforma Arduino
         run: |
+          arduino-cli core download ${{ matrix.arduino-platform }} ${{ matrix.flag-additional-urls }}
           arduino-cli core update-index
-          arduino-cli core install ${{ matrix.arduino-platform }}
+          arduino-cli core install ${{ matrix.arduino-platform }} ${{ matrix.flag-additional-urls }}
 
       # Habilitar a instalação não segura da biblioteca Brasilino local
       # é necessário criar um config file para armazenar o valor da flag
@@ -96,11 +103,11 @@ jobs:
       # na construção da matrix
       - name: Compile Sketch
         run: |
-          arduino-cli compile --fqbn ${{ matrix.fqbn }} ./examples/Atuadores/Motor
-          arduino-cli compile --fqbn ${{ matrix.fqbn }} ./examples/Basicos/Piscar
-          arduino-cli compile --fqbn ${{ matrix.fqbn }} ./examples/Basicos/analogicoSerial
-          arduino-cli compile --fqbn ${{ matrix.fqbn }} ./examples/Intermediario/quarentaedois
-          arduino-cli compile --fqbn ${{ matrix.fqbn }} ./examples/Sensores/Botao
-          arduino-cli compile --fqbn ${{ matrix.fqbn }} ./examples/Sensores/Luminosidade
-          arduino-cli compile --fqbn ${{ matrix.fqbn }} ./examples/Sensores/Temperatura
-          arduino-cli compile --fqbn ${{ matrix.fqbn }} ./examples/Sensores/Ultrassom-HC-SR04
+          arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Atuadores/Motor
+          arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Basicos/Piscar
+          arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Basicos/analogicoSerial
+          arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Intermediario/quarentaedois
+          arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Sensores/Botao
+          arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Sensores/Luminosidade
+          arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Sensores/Temperatura
+          arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Sensores/Ultrassom-HC-SR04
