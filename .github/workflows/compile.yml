@@ -13,6 +13,8 @@ jobs:
   compile:
 
     strategy:
+      # Desabilita fail-fast e garante que todas as matrix sejam testadas
+      fail-fast: false
       # Estratégia em Matrix, pois vamos trabalhar com diversos tipos de placa
       matrix:
 
