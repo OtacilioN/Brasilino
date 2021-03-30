@@ -119,7 +119,7 @@ jobs:
 
       # Teste de ./examples/Intermediario
       - name: Compile Sketch quarentaedois.ino
-        if: matrix.serial-enabled == 'true'
+        if: matrix.serial-enabled == true
         run: |
           arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Intermediario/quarentaedois
       
@@ -129,22 +129,22 @@ jobs:
           arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Sensores/Botao
       
       - name: Compile Sketch Luminosidade.ino
-        if: matrix.serial-enabled == 'true'
+        if: matrix.serial-enabled == true
         run: |
           arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Sensores/Luminosidade
 
       - name: Compile Sketch Temperatura.ino
-        if: matrix.serial-enabled == 'true'
+        if: matrix.serial-enabled == true
         run: |
           arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Sensores/Temperatura
 
       - name: Compile Sketch Ultrassom-HC-SR04
-        if: matrix.serial-enabled == 'true'
+        if: matrix.serial-enabled == true
         run: |
           arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Sensores/Ultrassom-HC-SR04
 
       # Teste de ./examples/Atuadores
       - name: Compile Sketch Motor.ino
-        if: matrix.serial-enabled == 'true'
+        if: matrix.serial-enabled == true
         run: |
           arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Atuadores/Motor
