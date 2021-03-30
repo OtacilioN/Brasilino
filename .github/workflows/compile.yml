@@ -160,6 +160,5 @@ jobs:
 
       # Teste de ./examples/Atuadores
       - name: Compile Sketch Motor.ino
-        if: matrix.serial-enabled == true
         run: |
           arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Atuadores/Motor
