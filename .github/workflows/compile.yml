@@ -123,7 +123,16 @@ jobs:
         run: |
           arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Basicos/analogicoSerial
 
+      - name: Compile Sketch controleGradual.ino
+        run: |
+          arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Basicos/controleGradual
+
       # Teste de ./examples/Intermediario
+      - name: Compile Sketch ASCII.ino
+        if: matrix.serial-enabled == true
+        run: |
+          arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Intermediario/ASCII
+
       - name: Compile Sketch quarentaedois.ino
         if: matrix.serial-enabled == true
         run: |
