@@ -32,6 +32,12 @@ jobs:
           #
           # Variável fqbn:
           # Se refere diretamente a escolha da placa ao qual você deseja realizar um trabalho
+          # 
+          # Variável serial-enabled:
+          # Se refere as placas que possuem comunicação serial por meio de interface USB padrão
+          # do Arduino, que é a mesma serial do Monitor Serial. Essa variável é necessária, pois
+          # há placas (arduino-gemma e micronucleus-franzininho) que trabalham com processador que 
+          # não suporta interface serial dos exemplos
           - boards: arduino-uno
             arduino-platform: "arduino:avr"
             fqbn: "arduino:avr:uno"
