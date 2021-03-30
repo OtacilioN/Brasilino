@@ -101,13 +101,39 @@ jobs:
       # Finally, we compile the sketch, using the FQBN that was set
       # Nós finalmente, compilamos os sketch, usando a flag --fqbn que é setada
       # na construção da matrix
-      - name: Compile Sketch
+      #
+      # Teste de ./examples/Basicos
+      - name: Compile Sketch Piscar.ino
         run: |
           arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Basicos/Piscar
+      
+      - name: Compile Sketch analogicoSerial.ino
+        run: |
           arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Basicos/analogicoSerial
+
+      # Teste de ./examples/Intermediario
+      - name: Compile Sketch quarentaedois.ino
+        run: |
           arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Intermediario/quarentaedois
+      
+      # Teste de ./examples/Sensores
+      - name: Compile Sketch Botao.ino
+        run: |
           arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Sensores/Botao
+      
+      - name: Compile Sketch Luminosidade.ino
+        run: |
           arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Sensores/Luminosidade
+
+      - name: Compile Sketch Temperatura.ino
+        run: |
           arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Sensores/Temperatura
+
+      - name: Compile Sketch Ultrassom-HC-SR04
+        run: |
           arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Sensores/Ultrassom-HC-SR04
+
+      # Teste de ./examples/Atuadores
+      - name: Compile Sketch Motor.ino
+        run: |
           arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Atuadores/Motor
