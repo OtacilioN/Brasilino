@@ -113,7 +113,7 @@ jobs:
           arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Basicos/Piscar
       
       - name: Compile Sketch analogicoSerial.ino
-        if: matrix.serial-enabled == 'true'
+        if: matrix.serial-enabled == true
         run: |
           arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Basicos/analogicoSerial
 
