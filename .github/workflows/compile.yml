@@ -88,6 +88,8 @@ jobs:
       # a ferramenta/Action que irá realizar a compilação dos sketches para as placas 
       - name: Instalação Arduino CLI
         uses: arduino/setup-arduino-cli@v1.1.1
+        with:
+          version: "0.17.0"
 
       # Nós fazemos a instalação da plataforma que irá dinâmicamente ser construído 
       # pela estratégia da matrix
