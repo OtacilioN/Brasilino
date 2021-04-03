@@ -93,6 +93,7 @@
 
 //------------------Funções de Serial----------------------
 #if defined(ARDUINO_AVR_GEMMA)
+#elif defined(ARDUINO_AVR_DIGISPARK)
 #else
 void iniciarSerial(void);
 void iniciarSerial(int baud);
