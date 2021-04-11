@@ -41,7 +41,7 @@ logico botao;                // As variáveis do tipo lógico são as mais simpl
 
 longo numeroGrande = 999999; // Quando precisamos de armazenar números muito grandes utilizamos as variáveis do tipo longo
 constante inteiro RESP = 42; // Nem sempre precisamos que os valores sejam modificados ao longo do código, para isso criamos constantes
-modulo inteiro positivo;     // E algumas vezes não queremos valores negativos para as nossas variáveis
+positivo inteiro numeroPositivo; // E algumas vezes não queremos valores negativos para as nossas variáveis
 Ultrassom usFrente(9, 8);    // Declara um sensor de Ultrassom chamado "usFrente" nos pinos 9 e 8
 
 // Você também pode chamar de procedimento configurar se preferir

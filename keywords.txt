@@ -9,9 +9,12 @@
 Brasilino	KEYWORD1
 iniciarSerial	KEYWORD1
 lerSerial	KEYWORD1
-escreverSerialn	KEYWORD1
 escreverSerial	KEYWORD1
+escreverSerialn	KEYWORD1
+escreverSerialEspecial 	KEYWORD1
+escreverSerialnEspecial	KEYWORD1
 Ultrassom	KEYWORD1
+Motor	KEYWORD1
 
 
 #######################################
@@ -38,6 +41,20 @@ definirPino	KEYWORD2
 temperatura	KEYWORD2
 Temporizando	KEYWORD2
 Medir	KEYWORD2
+modular	KEYWORD2
+restringir	KEYWORD2
+mapear	KEYWORD2
+maior	KEYWORD2
+menor	KEYWORD2
+potenciar	KEYWORD2
+quadrado	KEYWORD2
+raizQuadrada	KEYWORD2
+seno	KEYWORD2
+cosseno	KEYWORD2
+tangente	KEYWORD2
+configurarVelocidade	KEYWORD2
+girar	KEYWORD2
+parar	KEYWORD2
 
 
 #########################################
@@ -52,6 +69,7 @@ senao	KEYWORD3		RESERVED_WORD
 comparar	KEYWORD3		RESERVED_WORD
 caso	KEYWORD3		RESERVED_WORD
 enquanto	KEYWORD3		RESERVED_WORD
+fazer	KEYWORD3		RESERVED_WORD
 para	KEYWORD3		RESERVED_WORD
 sair	KEYWORD3		RESERVED_WORD
 
@@ -86,4 +104,7 @@ caractere	LITERAL1
 logico	LITERAL1
 constante	LITERAL1
 longo	LITERAL1
+positivo	LITERAL1
 modulo	LITERAL1
+PARA_FRENTE	LITERAL1
+PARA_TRAS	LITERAL1

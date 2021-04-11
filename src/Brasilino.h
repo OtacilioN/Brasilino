@@ -21,6 +21,7 @@
 #endif
 
 //------------------Argumentos Lógicos---------------------
+#define ENTRADA_ALTA INPUT_PULLUP
 #define ENTRADA INPUT
 #define SAIDA OUTPUT
 #define ALTO HIGH
@@ -42,7 +43,8 @@
 #define logico boolean
 #define constante const
 #define longo long
-#define modulo unsigned
+#define positivo unsigned // Contribuição de @ViniciosSilva811 e @r4faelrs através de issue
+#define modulo positivo   // Contribuição de @ViniciosSilva811 e @r4faelrs através de issue
 
 //------------------Laços Lógicos---------------------
 #define se if
@@ -52,6 +54,7 @@
 
 //------------------Laços de Repetição---------------------
 #define enquanto while
+#define fazer do	// Contribuição de @ViniciosSilva811
 #define para for
 #define sair break
 #define contarAte(y) for (int x = 0; x < y; x++)
@@ -151,6 +154,7 @@ for (VAR = paraCada_ELEM (i, array, __typeof__ ((ARRAY)[0])); b; b = 0)
 
 //------------------Funções de Serial----------------------
 #if defined(ARDUINO_AVR_GEMMA)
+#elif defined(ARDUINO_AVR_DIGISPARK)
 #else
 void iniciarSerial(void);
 void iniciarSerial(int baud);
@@ -158,8 +162,24 @@ void iniciarSerial(int baud);
 #define lerSerial() Serial.read()
 #define escreverSerialn(texto) Serial.println(texto)
 #define escreverSerial(texto) Serial.print(texto)
+#define escreverSerialnEspecial(texto, formato) Serial.println(texto, formato)
+#define escreverSerialEspecial(texto, formato) Serial.print(texto, formato)
 #endif
 dobro temperatura(int RawADC);
+
+//------------------Funções Matemáticas ----------------------
+// Contibuição de @ViniciosSilva811
+#define modular(valor) abs(valor)
+#define restringir(valor, a, b) constrain(valor, a, b)
+#define mapear(valor, deMenor, deMaior, paraMenor, paraMaior) map(valor, deMenor, deMaior, paraMenor, paraMaior)
+#define maior(a, b) max(a, b)
+#define menor(a, b) min(a, b)
+#define potenciar(a, b) pow(a, b)
+#define quadrado(valor) sq(valor)
+#define raizQuadrada(valor) sqrt(valor)
+#define seno(valor) sin(valor)
+#define cosseno(valor) cos(valor)
+#define tangente(valor) tan(valor)
 
 /* Ultrassom */
 /* Este trecho e' baseado na biblioteca ultrassonic.h de J. Rodrigo e emcontra-se disponivel originalmente em: https://github.com/JRodrigoTech/Ultrasonic-HC-SR04 */
@@ -176,5 +196,38 @@ class Ultrassom
 	long tempo_limite;
 	long duracao;
 };
+
+/* Motor */
+
+/* 
+	Este trecho de código é baseado na biblioteca Stubborn DCMotor
+	que se encontra em https://github.com/ViniciosSilva811/Stubborn_DCMotor 
+*/
+
+#define PARA_FRENTE 1
+#define PARA_TRAS   2
+
+class Motor
+{
+	public:
+		Motor(uint8_t pino_A, uint8_t pino_B, uint8_t pino_pwm);
+		void configurarVelocidade(uint8_t velocidade);
+		void girar(uint8_t sentido);
+		void parar();
+	private:
+		uint8_t _pino_A, _pino_B, _pino_pwm;
+		uint8_t _velocidade;
+		uint8_t _sentido;
+};
+
+//------------------Comparadores----------------------
+#define igual ==
+#define maior >
+#define maior_igual >=
+#define menor <
+#define menor_igual <=
+#define logico_e &&
+#define logico_ou ||
+
 #endif
 // Não apagar antes disto.
