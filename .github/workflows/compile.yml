@@ -129,6 +129,11 @@ jobs:
         run: |
           arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Basicos/controleGradual
 
+      - name: Compile Sketch paraCada.ino
+        if: matrix.serial-enabled == true
+        run: |
+          arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Basicos/paraCada
+
       # Teste de ./examples/Intermediario
       - name: Compile Sketch ASCII.ino
         if: matrix.serial-enabled == true
