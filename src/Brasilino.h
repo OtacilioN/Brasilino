@@ -60,17 +60,6 @@
 #define contarAte(y) for (int x = 0; x < y; x++)
 #define contarDe(y) for (int x = y; x > 0; x--)
 
-//------------------Funções---------------------
-#define imprimir print
-#define imprimirLinha println
-#define iniciar begin
-
-#define escrever write
-#define ler read
-
-#define esperar(tempo) delay(tempo * 1000)
-#define esperarMili(tempo) delay(tempo)
-
 //-----------paraCada(foreach)-------------
 #define paraCada(item, array) \
 for (typeof(*(array)) *p = (array), (item) = *p; \
@@ -81,6 +70,17 @@ for (typeof(*(array)) *p = (array), (item) = *p; \
  *Internaliza a função `for` e trabalha com o ponteiro `p` que 
  *percorre todo o array de acordo com o tamanho do array
  */
+
+//------------------Funções---------------------
+#define imprimir print
+#define imprimirLinha println
+#define iniciar begin
+
+#define escrever write
+#define ler read
+
+#define esperar(tempo) delay(tempo * 1000)
+#define esperarMili(tempo) delay(tempo)
 
 //------------------Funções de Comando---------------------
 #define ligar(pino) digitalWrite(pino, HIGH)
