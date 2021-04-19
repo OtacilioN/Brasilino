@@ -6,12 +6,11 @@
     
     paraCada(A,B)
     {
-        imprima(A);
+        escreverSerial(A);
     }
 
     Variáveis:
-     A (Variável a ser preenchida com os valores do vetor/matriz que está sendo lido. É
-     necessário que tenha o mesmo tipo do vetor/matriz).
+     A (Variável a ser preenchida com os valores do vetor/matriz que está sendo lido).
      B (Vetor/matriz a ser percorrido durante o laço).
 
      O laço irá executar até o fim do vetor/matriz ser atingido ou uma condição de quebra seja
@@ -20,11 +19,12 @@
     Este exemplo de código está em domínio público.
     
     criado em 28 de abril de 2018
-    modificado em 12 de fevereiro de 2019
+    modificado em 19 de abril de 2021
     Desenvolvido por Alesson Renato.
+    Modificado por Steffano Pereira
     Contribuição a biblioteca Brasilino.
     
-    Este exemplo é baseado em código aberto referente a linguagem C++.
+    Este exemplo é baseado em código aberto referente a linguagem C++/Arduino.
 */  
 
 // Inclue a biblioteca Brasilino
@@ -56,5 +56,6 @@ funcao repetir() {
 }
 /* 
     OBS: O exemplo foi criado usando o tipo de dado inteiro, contudo a função é compatível com 
-    qualquer tipo de dado primitivo ou composto compatível com a linguagem C++
+    qualquer tipo de dado primitivo ou composto compatível com a linguagem C++. Porém não é
+    compatível com vetores/arrays multidimensionais.
 */
