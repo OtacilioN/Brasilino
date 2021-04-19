@@ -39,19 +39,20 @@ funcao configurar() {
 // A funcao repetir executa para sempre
 funcao repetir() {
     // Cria a variável celula que armazenará o conteudo das celulas do vetor, cria posição que demonstrará a posição da celula atual e por fim cria um vetor com valores inteiros
-    inteiro celula, posicao=1, vetor[10]{10,9,8,7,6,5,4,3,2,1};
+    inteiro celula, posicao = 0, vetor[10] = {10,9,8,7,6,5,4,3,2,1};
     // Chama a função paraCada que guardará em celula um valor de posição do vetor que cada iteração
     paraCada(celula,vetor){
-    // Escreve Posicao na serial
-    escreverSerial("Posicao:");
-    // Escreve a posição lida atual
-    escreverSerial(posicao);
-    // Escreve um espaço entre os valores e a palavra Valor:
-    escreverSerial(" Valor:");
-    // Escreve o valor contido na celula atual e pula uma linha
-    escreverSerialn(celula);  
-    esperar(0.5); // espera meio segundo
-    posicao++; // atualiza posição
+        // Escreve Posicao na serial
+        escreverSerial("Posicao:");
+        // Escreve a posição lida atual
+        escreverSerial(posicao);
+        // Escreve um espaço entre os valores e a palavra Valor:
+        escreverSerial(" Valor:");
+        // Escreve o valor contido na celula atual e pula uma linha
+        escreverSerialn(celula);  
+        esperar(0.5); // espera meio segundo
+        posicao++; // atualiza posição
+    }
 }
 /* 
     OBS: O exemplo foi criado usando o tipo de dado inteiro, contudo a função é compatível com 
