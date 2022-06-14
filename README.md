@@ -54,7 +54,7 @@ Se este é o seu primeiro contato com Open Source, aprenda a [como contribuir co
 |                 **Otacilio Maia**                  |                    **Thiago Augusto**                    |                   **Erick Simoes**                   |             **Rômulo César**              |
 | :------------------------------------------------: | :------------------------------------------------------: | :--------------------------------------------------: | :---------------------------------------: |
 | ![Otacílio](https://github.com/OtacilioN.png?size=140) | ![Thiago](https://github.com/ThiagoAugustoSM.png?size=140) | ![Erick](https://github.com/ErickSimoes.png?size=140) | ![Rômulo](/docs/images/romulo.png?size=100) |
-|           **Idelização e Implementação**           |              **Validação e Implementação**               |     **Consultor de formatação e Implementação**      |         **Orientador Acadêmico**          |
+|           **Idealização e Implementação**           |              **Validação e Implementação**               |     **Consultor de formatação e Implementação**      |         **Orientador Acadêmico**          |
 
 Veja a lista completa de [colaboradores](https://github.com/OtacilioN/Brasilino/graphs/contributors).
 
