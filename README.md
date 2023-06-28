@@ -6,6 +6,18 @@
 
 _Uma **biblioteca** que permite programar em linguagem **Arduino** utilizando comandos facilitados em **PT-BR**._
 
+## Índice
+
+- [Sobre](#sobre)
+- [Documentação](#documentação)
+- [A Equipe Brasilino](#a-equipe-brasilino)
+- [Artigos Relacionados](#artigos-relacionados)
+- [Conte-nos sobre a sua experiência](#conte-nos-sobre-a-sua-experiência-com-o-brasilino)
+- [Apoio](#apoio)
+- [Licença](#licença)
+
+## Sobre
+
 De acordo com um estudo realizado pela Education First, o EF EPI (EF English Proficiency Index) 6° edição, publicado em Novembro de 2016, o Brasil aparece como **40°** colocado em **nível de proficiência em língua inglesa**, de um estudo realizado com **72 países**, com pontuação de 50,66, o que é considerada como **"Baixa"** pelo estudo. Tal deficiência em língua inglesa acentua-se ainda mais nas classes sociais menos privilegiadas.
 
 Com o baixo índice de proficiência em língua inglesa apresentado pelo Brasil, muitos brasileiros sentem dificuldade em programar, devido ao fato da língua nativa em que os comandos são inscritos ser o inglês, muitas vezes, **não conseguindo associar a palavra _"if"_ ao _"se"_**, criando-se assim uma barreira, que muitas vezes afasta o brasileiro do ambiente de desenvolvimento tecnológico.
@@ -87,4 +99,4 @@ A biblioteca Brasilino é apoiada pelo Makerama, uma comunidade Maker que apoia 
 Brasilino está licenciado sob a licença GPL-3.0, e tem seus exemplos baseados no trabalho do projeto [Arduino](https://github.com/arduino/Arduino).
 Veja a [licença](https://github.com/OtacilioN/Brasilino/blob/master/LICENSE) para mais informações.
 
-Sinta-se livre para enviar um email para: brasilino@otaciliomaia.com
+Sinta-se livre para enviar um email para: <brasilino@otaciliomaia.com>
