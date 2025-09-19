@@ -60,6 +60,17 @@
 #define contarAte(y) for (int x = 0; x < y; x++)
 #define contarDe(y) for (int x = y; x > 0; x--)
 
+//-----------paraCada(foreach)-------------
+#define paraCada(item, array) \
+for (typeof(*(array)) *p = (array), (item) = *p; \
+     p < &((array)[sizeof (array)/sizeof (typeof (*(array)))]); \
+     p++, (item) = *p)
+/*Baseado na solução de: https://stackoverflow.com/a/47133982/11855220
+ *
+ *Internaliza a função `for` e trabalha com o ponteiro `p` que 
+ *percorre todo o array de acordo com o tamanho do array
+ */
+
 //------------------Funções---------------------
 #define imprimir print
 #define imprimirLinha println

@@ -135,6 +135,11 @@ jobs:
         run: |
           arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Intermediario/ASCII
 
+      - name: Compile Sketch paraCada.ino
+        if: matrix.serial-enabled == true
+        run: |
+          arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Intermediario/paraCada
+
       - name: Compile Sketch quarentaedois.ino
         if: matrix.serial-enabled == true
         run: |
