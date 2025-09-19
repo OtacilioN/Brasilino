@@ -107,3 +107,11 @@ void Motor::parar() {
 	digitalWrite(_pino_A, LOW);
 	digitalWrite(_pino_B, LOW);
 }
+
+int aleatorio(int min){
+	random(min);
+}
+int aleatorio(int min,int max){
+	random(min,max +1);
+}
+

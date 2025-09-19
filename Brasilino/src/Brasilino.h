@@ -71,7 +71,8 @@
 #define esperar(tempo) delay(tempo * 1000)
 #define esperarMili(tempo) delay(tempo)
 
-#define aleatorio random
+#define aleatorio(min) random(min)
+#define aleatorio(min, max) random(min, max + 1)
 
 //------------------Funções de Comando---------------------
 #define ligar(pino) digitalWrite(pino, HIGH)
