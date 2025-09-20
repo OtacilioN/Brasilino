@@ -19,6 +19,8 @@
 #else
 #include "WProgram.h"
 #endif
+// ------------------Constantes---------------------
+#define LED_INTERNO LED_BUILTIN // contribuição de @EduardaOL
 
 //------------------Argumentos Lógicos---------------------
 #define ENTRADA_ALTA INPUT_PULLUP
