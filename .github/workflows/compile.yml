@@ -112,55 +112,15 @@ jobs:
           arduino-cli lib install --zip-path ${{ github.workspace }}/src.zip
     
       # Finally, we compile the sketch, using the FQBN that was set
-      # Nós finalmente, compilamos os sketch, usando a flag --fqbn que é setada
-      # na construção da matrix
-      #
-      # Teste de ./examples/Basicos
-      - name: Compile Sketch Piscar.ino
+      # Compila automaticamente todos os exemplos .ino
+      - name: Compilar todos os exemplos
         run: |
-          arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Basicos/Piscar
-      
-      - name: Compile Sketch analogicoSerial.ino
-        if: matrix.serial-enabled == true
-        run: |
-          arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Basicos/analogicoSerial
-
-      - name: Compile Sketch controleGradual.ino
-        run: |
-          arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Basicos/controleGradual
-
-      # Teste de ./examples/Intermediario
-      - name: Compile Sketch ASCII.ino
-        if: matrix.serial-enabled == true
-        run: |
-          arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Intermediario/ASCII
-
-      - name: Compile Sketch quarentaedois.ino
-        if: matrix.serial-enabled == true
-        run: |
-          arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Intermediario/quarentaedois
-      
-      # Teste de ./examples/Sensores
-      - name: Compile Sketch Botao.ino
-        run: |
-          arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Sensores/Botao
-      
-      - name: Compile Sketch Luminosidade.ino
-        if: matrix.serial-enabled == true
-        run: |
-          arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Sensores/Luminosidade
-
-      - name: Compile Sketch Temperatura.ino
-        if: matrix.serial-enabled == true
-        run: |
-          arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Sensores/Temperatura
-
-      - name: Compile Sketch Ultrassom
-        if: matrix.serial-enabled == true
-        run: |
-          arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Sensores/Ultrassom
-
-      # Teste de ./examples/Atuadores
-      - name: Compile Sketch Motor.ino
-        run: |
-          arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Atuadores/Motor
+          find ./examples -name "*.ino" | while read sketch; do
+            if [[ "$sketch" =~ "analogicoSerial"|"ASCII"|"quarentaedois"|"Luminosidade"|"Temperatura"|"Ultrassom" ]]; then
+              if [ "${{ matrix.serial-enabled }}" = "true" ]; then
+                arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} "$sketch"
+              fi
+            else
+              arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} "$sketch"
+            fi
+          done
