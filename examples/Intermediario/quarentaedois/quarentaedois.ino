@@ -42,7 +42,7 @@ logico botao;                // As variáveis do tipo lógico são as mais simpl
 longo numeroGrande = 999999; // Quando precisamos de armazenar números muito grandes utilizamos as variáveis do tipo longo
 constante inteiro RESP = 42; // Nem sempre precisamos que os valores sejam modificados ao longo do código, para isso criamos constantes
 positivo inteiro numeroPositivo; // E algumas vezes não queremos valores negativos para as nossas variáveis
-Ultrassom usFrente(9, 8);    // Declara um sensor de Ultrassom chamado "usFrente" nos pinos 9 e 8
+Ultrassom usFrente(8, 9);    // Declara um sensor de Ultrassom chamado "usFrente" nos pinos 8 e 9
 
 // Você também pode chamar de procedimento configurar se preferir
 funcao configurar() {
@@ -66,7 +66,7 @@ funcao configurar() {
 // Aqui também pode ser chamado de procedimento repetir, fica à sua escolha
 funcao repetir() {
     
-    distancia = usFrente.Medir();   // Salva na variavel distancia o valor de medicao do ultrassom
+    distancia = usFrente.lerDistancia();   // Salva na variavel distancia o valor de medicao do ultrassom
     se(distancia < 15) {            // Confere se o valor de distancia é menor que 15 cm
         escreverSerialn("Cuidado, esta' perto!");   // O comando escreverSerialn pula uma linha após imprimir na tela
         esperar(0.5);               // Espera meio segundo para executar a proxima instrução
