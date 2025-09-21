@@ -155,10 +155,10 @@ jobs:
         run: |
           arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Sensores/Temperatura
 
-      - name: Compile Sketch Ultrassom-HC-SR04
+      - name: Compile Sketch Ultrassom
         if: matrix.serial-enabled == true
         run: |
-          arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Sensores/Ultrassom-HC-SR04
+          arduino-cli compile --fqbn ${{ matrix.fqbn }} ${{ matrix.flag-programmer }} ./examples/Sensores/Ultrassom
 
       # Teste de ./examples/Atuadores
       - name: Compile Sketch Motor.ino
