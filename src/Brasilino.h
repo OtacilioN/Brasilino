@@ -75,6 +75,66 @@
 #define esperar(tempo) delay(tempo * 1000)
 #define esperarMili(tempo) delay(tempo)
 
+//-------------paraCada(foreach)---------------
+//concatena
+#define CONCAT(a,b) CONCAT_(a,b) 
+#define CONCAT_(a,b) a ## b
+
+/* Higiene nos macros */
+#define GENSYM(name) \
+    CONCAT(CONCAT(CONCAT(_anon_variable_, name),__LINE__),__COUNTER__)
+
+/* funcoes de ajuda para paraCada*/
+
+/* paraCada_COMP
+   Checa se o valor de indice e maior que o comprimento do array.
+ */
+
+#define paraCada_COMP(INDEX, ARRAY, ARRAY_TYPE, SIZE) \
+  paraCada_COMP_ (INDEX, ARRAY, ARRAY_TYPE, SIZE, GENSYM (ret))
+#define paraCada_COMP_(INDEX, ARRAY, ARRAY_TYPE, SIZE, ret) \
+  __extension__ \
+  ({ \
+    bool ret = 0; \
+    if (__builtin_types_compatible_p (const char*, ARRAY_TYPE)) \
+      ret = INDEX < strlen ((const char*)ARRAY); \
+    else \
+      ret = INDEX < SIZE; \
+    ret; \
+  })
+
+/* paraCada_ELEM
+   Retorna um ponteiro ao elemento no indice do array.
+ */
+
+#define paraCada_ELEM(INDEX, ARRAY, TYPE) \
+  paraCada_ELEM_ (INDEX, ARRAY, TYPE, GENSYM (tmp_array))
+
+#define paraCada_ELEM_(INDEX, ARRAY, TYPE, tmp_array) \
+  __extension__ \
+  ({ \
+    TYPE *tmp_array_ = ARRAY; \
+    &tmp_array_[INDEX]; \
+  })
+
+/* paraCada
+   Aqui e onde a magia acontece :)
+   'b' = garante o fim do laco
+ */
+
+#define paraCada(VAR, ARRAY) \
+  paraCada_ (VAR, ARRAY, GENSYM (array), GENSYM (i), GENSYM (b))
+
+#define paraCada_(VAR, ARRAY, array, i, b) \
+for (void *array = (void*)(ARRAY); array; array = 0) \
+for (size_t i = 0; array && paraCada_COMP (i, array, \
+                              __typeof__ (ARRAY), \
+                              sizeof (ARRAY) / sizeof ((ARRAY)[0])); \
+                              i++) \
+for (bool b = 1; b; (b) ? array = 0 : 0, b = 0) \
+for (VAR = paraCada_ELEM (i, array, __typeof__ ((ARRAY)[0])); b; b = 0)
+
+
 //------------------Funções de Comando---------------------
 #define ligar(pino) digitalWrite(pino, HIGH)
 #define desligar(pino) digitalWrite(pino, LOW)
