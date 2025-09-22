@@ -14,11 +14,15 @@
 #ifndef Brasilino_h
 #define Brasilino_h
 
+#include "Ultrassom/Ultrassom.h" // Baseado na biblioteca Ultrassonic de Erick Simões
+
 #if ARDUINO >= 100
 #include "Arduino.h"
 #else
 #include "WProgram.h"
 #endif
+// ------------------Constantes---------------------
+#define LED_INTERNO LED_BUILTIN // contribuição de @EduardaOL
 
 //------------------Argumentos Lógicos---------------------
 #define ENTRADA_ALTA INPUT_PULLUP
@@ -122,22 +126,6 @@ dobro temperatura(int RawADC);
 #define seno(valor) sin(valor)
 #define cosseno(valor) cos(valor)
 #define tangente(valor) tan(valor)
-
-/* Ultrassom */
-/* Este trecho e' baseado na biblioteca ultrassonic.h de J. Rodrigo e emcontra-se disponivel originalmente em: https://github.com/JRodrigoTech/Ultrasonic-HC-SR04 */
-class Ultrassom
-{
-  public:
-	Ultrassom(int tp, int ep);
-	long Temporizando();
-	long Medir();
-
-  private:
-	int trig_pino;
-	int echo_pino;
-	long tempo_limite;
-	long duracao;
-};
 
 /* Motor */
 
