@@ -75,6 +75,10 @@
 #define esperar(tempo) delay(tempo * 1000)
 #define esperarMili(tempo) delay(tempo)
 
+void iniciarAleatorio(unsigned long);
+int aleatorio(int max); //contribuição de @jarthur-duarte
+int aleatorio(int min, int max);
+
 //------------------Funções de Comando---------------------
 #define ligar(pino) digitalWrite(pino, HIGH)
 #define desligar(pino) digitalWrite(pino, LOW)
