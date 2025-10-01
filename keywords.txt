@@ -16,7 +16,6 @@ escreverSerialnEspecial	KEYWORD1
 Ultrassom	KEYWORD1
 Motor	KEYWORD1
 
-
 #######################################
 # Metodos e Funções (KEYWORD2)
 #######################################
@@ -56,6 +55,11 @@ configurarVelocidade	KEYWORD2
 girar	KEYWORD2
 parar	KEYWORD2
 
+# ServoMotor
+conectar	KEYWORD2
+escreverAngulo	KEYWORD2
+lerAngulo	KEYWORD2
+desconectar	KEYWORD2
 
 #########################################
 # Estruturas específicas (KEYWORD3)
