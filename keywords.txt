@@ -15,7 +15,7 @@ escreverSerialEspecial 	KEYWORD1
 escreverSerialnEspecial	KEYWORD1
 Ultrassom	KEYWORD1
 Motor	KEYWORD1
-
+iniciarAleatorio KEYWORD1
 
 #######################################
 # Metodos e Funções (KEYWORD2)
@@ -55,6 +55,7 @@ tangente	KEYWORD2
 configurarVelocidade	KEYWORD2
 girar	KEYWORD2
 parar	KEYWORD2
+aleatorio KEYWORD2
 
 
 #########################################
