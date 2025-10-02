@@ -17,7 +17,7 @@
 #include <Brasilino.h>
 
 Ultrassom ultrassom(8, 9);
-int distancia;
+inteiro distancia;
 
 funcao configurar() {
   // Inicializa a comunicação serial com a placa

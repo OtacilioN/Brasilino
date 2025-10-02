@@ -1,5 +1,5 @@
 /*
-    Temperatura   
+    Luminosidade
     Lê o valor obtido pelo sensor LDR, e mostra o resultado em °C no monitor serial.
     
     Utilize um LDR de 10k, alimentado com +5v e com um resistor de 10k entre o pino A1 e o gnd. 
