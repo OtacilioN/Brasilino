@@ -77,14 +77,18 @@ void Motor::parar() {
 	digitalWrite(_pino_B, LOW);
 }
 
+void iniciarAleatorio() {
+  randomSeed(analogRead(A0));
+}
+
 void iniciarAleatorio(unsigned long seed){
 	randomSeed(seed);
 }
 
 int aleatorio(int max){
-	random(max + 1);
+	return random(max + 1);
 }
 
 int aleatorio(int min, int max){
-	random(min, max + 1);
+	return random(min, max + 1);
 }
