@@ -17,13 +17,13 @@
 
 #include "Ultrassom.h"
 
-Ultrassom::Ultrassom(int trigPin, int echoPin, unsigned long timeOut) {
-  trig = trigPin;
-  echo = echoPin;
+Ultrassom::Ultrassom(int pinoTrig, int pinoEcho, unsigned long tempoLimite) {
+  trig = pinoTrig;
+  echo = pinoEcho;
   threePins = trig == echo ? true : false;
   pinMode(trig, OUTPUT);
   pinMode(echo, INPUT);
-  timeout = timeOut;
+  timeout = tempoLimite;
 }
 
 unsigned int Ultrassom::temporizador() {

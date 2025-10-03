@@ -20,10 +20,10 @@
 
 class Ultrassom {
   public:
-    Ultrassom(int sigPin) : Ultrassom(sigPin, sigPin) {};
-    Ultrassom(int trigPin, int echoPin, unsigned long timeOut = 20000UL);
+    Ultrassom(int pinoSinal) : Ultrassom(pinoSinal, pinoSinal) {};
+    Ultrassom(int pinoTrig, int pinoEcho, unsigned long tempoLimite = 20000UL);
     unsigned int lerDistancia(int und = CM);
-    void definirTempoLimite(unsigned long timeOut) {timeout = timeOut;}
+    void definirTempoLimite(unsigned long tempoLimite) {timeout = tempoLimite;}
 
   private:
     int trig;
