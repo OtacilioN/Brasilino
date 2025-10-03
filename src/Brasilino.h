@@ -21,7 +21,10 @@
 #endif
 
 #include "Ultrassom/Ultrassom.h" // Baseado na biblioteca Ultrassonic de Erick Simões
+
+#ifndef Servo_h
 #include <Servo.h>
+#endif
 
 // ------------------Constantes---------------------
 #define LED_INTERNO LED_BUILTIN // contribuição de @EduardaOL
@@ -132,13 +135,15 @@ dobro temperatura(int RawADC);
 #define tangente(valor) tan(valor)
 
 //------------------Funções de Servo ----------------------
-// Contribuição de Erick Simões
+// Contibuição de Erick Simões
 #ifdef Servo_h
 
 #define conectar attach
 #define desconectar detach
 #define escreverAngulo write
 #define lerAngulo read
+
+#endif
 
 /* Motor */
 
