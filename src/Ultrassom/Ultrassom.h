@@ -23,7 +23,7 @@ class Ultrassom {
     Ultrassom(int sigPin) : Ultrassom(sigPin, sigPin) {};
     Ultrassom(int trigPin, int echoPin, unsigned long timeOut = 20000UL);
     unsigned int lerDistancia(int und = CM);
-    void definirTimeout(unsigned long timeOut) {timeout = timeOut;}
+    void definirTempoLimite(unsigned long timeOut) {timeout = timeOut;}
 
   private:
     int trig;
