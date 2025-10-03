@@ -50,7 +50,7 @@ unsigned int Ultrassom::temporizador() {
 /*
  * Se a unidade de medida não for passada como parâmetro,
  * por padrão, será retornada a distância em centímetros.
- * Para alterar o padrão, substitua CM por INC.
+ * Para alterar para polegadas, substitua CM por POL.
  */
 unsigned int Ultrassom::lerDistancia(int und) {
   return temporizador() / und / 2;  // distância em centímetros ou polegadas
