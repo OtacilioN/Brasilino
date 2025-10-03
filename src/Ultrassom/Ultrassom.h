@@ -16,7 +16,7 @@
  * Valor dos divisores
  */
 #define CM 28
-#define INC 71
+#define POL 71
 
 class Ultrassom {
   public:
