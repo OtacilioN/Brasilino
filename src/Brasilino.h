@@ -14,14 +14,15 @@
 #ifndef Brasilino_h
 #define Brasilino_h
 
-#include "Ultrassom/Ultrassom.h" // Baseado na biblioteca Ultrassonic de Erick Simões
-#include <Servo.h>
-
 #if ARDUINO >= 100
 #include "Arduino.h"
 #else
 #include "WProgram.h"
 #endif
+
+#include "Ultrassom/Ultrassom.h" // Baseado na biblioteca Ultrassonic de Erick Simões
+#include <Servo.h>
+
 // ------------------Constantes---------------------
 #define LED_INTERNO LED_BUILTIN // contribuição de @EduardaOL
 
