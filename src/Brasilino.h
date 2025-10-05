@@ -14,13 +14,18 @@
 #ifndef Brasilino_h
 #define Brasilino_h
 
-#include "Ultrassom/Ultrassom.h" // Baseado na biblioteca Ultrassonic de Erick Simões
-
 #if ARDUINO >= 100
 #include "Arduino.h"
 #else
 #include "WProgram.h"
 #endif
+
+#include "Ultrassom/Ultrassom.h" // Baseado na biblioteca Ultrassonic de Erick Simões
+
+#ifndef Servo_h
+#include <Servo.h>
+#endif
+
 // ------------------Constantes---------------------
 #define LED_INTERNO LED_BUILTIN // contribuição de @EduardaOL
 
@@ -116,7 +121,7 @@ void iniciarSerial(int baud);
 dobro temperatura(int RawADC);
 
 //------------------Funções Matemáticas ----------------------
-// Contibuição de @ViniciosSilva811
+// Contribuição de @ViniciosSilva811
 #define modular(valor) abs(valor)
 #define restringir(valor, a, b) constrain(valor, a, b)
 #define mapear(valor, deMenor, deMaior, paraMenor, paraMaior) map(valor, deMenor, deMaior, paraMenor, paraMaior)
@@ -128,6 +133,17 @@ dobro temperatura(int RawADC);
 #define seno(valor) sin(valor)
 #define cosseno(valor) cos(valor)
 #define tangente(valor) tan(valor)
+
+//------------------Funções de Servo ----------------------
+// Contibuição de Erick Simões
+#ifdef Servo_h
+
+#define conectar attach
+#define desconectar detach
+#define escreverAngulo write
+#define lerAngulo read
+
+#endif
 
 /* Motor */
 

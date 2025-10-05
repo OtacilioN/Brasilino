@@ -17,13 +17,13 @@
 
 #include "Ultrassom.h"
 
-Ultrassom::Ultrassom(int trigPin, int echoPin, unsigned long timeOut) {
-  trig = trigPin;
-  echo = echoPin;
+Ultrassom::Ultrassom(int pinoTrig, int pinoEcho, unsigned long tempoLimite) {
+  trig = pinoTrig;
+  echo = pinoEcho;
   threePins = trig == echo ? true : false;
   pinMode(trig, OUTPUT);
   pinMode(echo, INPUT);
-  timeout = timeOut;
+  timeout = tempoLimite;
 }
 
 unsigned int Ultrassom::temporizador() {
@@ -50,7 +50,7 @@ unsigned int Ultrassom::temporizador() {
 /*
  * Se a unidade de medida não for passada como parâmetro,
  * por padrão, será retornada a distância em centímetros.
- * Para alterar o padrão, substitua CM por INC.
+ * Para alterar para polegadas, substitua CM por POL.
  */
 unsigned int Ultrassom::lerDistancia(int und) {
   return temporizador() / und / 2;  // distância em centímetros ou polegadas
