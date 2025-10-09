@@ -56,6 +56,7 @@ configurarVelocidade	KEYWORD2
 girar	KEYWORD2
 parar	KEYWORD2
 aleatorio KEYWORD2
+lerSerialAte KEYWORD2
 
 # Ultrassom
 lerDistancia	KEYWORD2
