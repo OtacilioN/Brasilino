@@ -54,6 +54,7 @@
 #define longo long
 #define positivo unsigned // Contribuição de @ViniciosSilva811 e @r4faelrs através de issue
 #define modulo positivo   // Contribuição de @ViniciosSilva811 e @r4faelrs através de issue
+#define frase String
 
 //------------------Laços Lógicos---------------------
 #define se if
@@ -117,8 +118,14 @@ void iniciarSerial(int baud);
 #define escreverSerial(texto) Serial.print(texto)
 #define escreverSerialnEspecial(texto, formato) Serial.println(texto, formato)
 #define escreverSerialEspecial(texto, formato) Serial.print(texto, formato)
+#define disponivelSerial() Serial.available()
+#define lerTextoSerialAte(caractere) Serial.readStringUntil(caractere)
 #endif
 dobro temperatura(int RawADC);
+
+//------------------Funções de Texto----------------
+#define removerEspacos trim
+#define paraInteiro toInt 
 
 //------------------Funções Matemáticas ----------------------
 // Contribuição de @ViniciosSilva811

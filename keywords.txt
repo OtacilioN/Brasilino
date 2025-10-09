@@ -56,6 +56,10 @@ configurarVelocidade	KEYWORD2
 girar	KEYWORD2
 parar	KEYWORD2
 aleatorio KEYWORD2
+removerEspacos	KEYWORD2
+paraInteiro	KEYWORD2
+disponivelSerial	KEYWORD2
+lerTextoSerialAte	KEYWORD2
 
 # Ultrassom
 lerDistancia	KEYWORD2
@@ -118,3 +122,4 @@ positivo	LITERAL1
 modulo	LITERAL1
 PARA_FRENTE	LITERAL1
 PARA_TRAS	LITERAL1
+frase LITERAL1
