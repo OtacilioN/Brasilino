@@ -84,6 +84,9 @@ void iniciarAleatorio(unsigned long);
 int aleatorio(int max); //contribuição de @jarthur-duarte
 int aleatorio(int min, int max);
 
+String lerSerialAte(char terminador); //contribuição de @jarthur-duarte
+
+
 //------------------Funções de Comando---------------------
 #define ligar(pino) digitalWrite(pino, HIGH)
 #define desligar(pino) digitalWrite(pino, LOW)

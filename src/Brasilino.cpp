@@ -92,3 +92,9 @@ int aleatorio(int max){
 int aleatorio(int min, int max){
 	return random(min, max + 1);
 }
+
+String lerSerialAte(char terminador) {
+  String texto = Serial.readStringUntil(terminador);
+  texto.trim();
+  return texto;
+}
