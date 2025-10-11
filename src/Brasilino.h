@@ -125,7 +125,7 @@ dobro temperatura(int RawADC);
 
 //------------------Funções de Texto----------------
 #define removerEspacos trim
-#define paraInteiro toInt 
+#define paraInteiro toInt
 
 //------------------Funções Matemáticas ----------------------
 // Contribuição de @ViniciosSilva811
