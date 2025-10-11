@@ -113,12 +113,12 @@ int aleatorio(int min, int max);
 void iniciarSerial(void);
 void iniciarSerial(int baud);
 
-#define lerSerial() Serial.read()
 #define escreverSerialn(texto) Serial.println(texto)
 #define escreverSerial(texto) Serial.print(texto)
 #define escreverSerialnEspecial(texto, formato) Serial.println(texto, formato)
 #define escreverSerialEspecial(texto, formato) Serial.print(texto, formato)
 #define disponivelSerial() Serial.available()
+#define lerSerial() Serial.read()
 #define lerTextoSerialAte(caractere) Serial.readStringUntil(caractere)
 #define lerTextoSerialAteFinal() Serial.readStringUntil('\n')
 #endif
