@@ -71,6 +71,20 @@ escreverAngulo	KEYWORD2
 lerAngulo	KEYWORD2
 desconectar	KEYWORD2
 
+#######################################
+# LedRGB
+#######################################
+LedRGB      KEYWORD1
+cor         KEYWORD2
+desligar    KEYWORD2
+VERMELHO    LITERAL1
+VERDE       LITERAL1
+AZUL        LITERAL1
+AMARELO     LITERAL1
+CIANO       LITERAL1
+MAGENTA     LITERAL1
+BRANCO      LITERAL1
+
 #########################################
 # Estruturas específicas (KEYWORD3)
 #########################################
