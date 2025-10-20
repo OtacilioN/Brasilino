@@ -49,6 +49,9 @@ void LedRGB::cor(Cor corPredefinida) {
     case BRANCO:
       cor(255, 255, 255);
       break;
+    default:
+      cor(0, 0, 0);
+      break;
   }
 }
 
