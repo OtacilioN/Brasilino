@@ -22,6 +22,8 @@
 
 #include "Ultrassom/Ultrassom.h" // Baseado na biblioteca Ultrassonic de Erick Simões
 
+#include "LedRGB/LedRGB.h" // Biblioteca LedRGB de João Arthur
+
 #ifndef Servo_h
 #include <Servo.h>
 #endif
