@@ -83,8 +83,10 @@
 #define esperar(tempo) delay(tempo * 1000)
 #define esperarMili(tempo) delay(tempo)
 
+//contribuição de @jarthur-duarte
+void iniciarAleatorio();
 void iniciarAleatorio(unsigned long);
-int aleatorio(int max); //contribuição de @jarthur-duarte
+int aleatorio(int max);
 int aleatorio(int min, int max);
 
 //------------------Funções de Comando---------------------
