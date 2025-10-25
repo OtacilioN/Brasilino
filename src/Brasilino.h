@@ -71,7 +71,9 @@
 #define sair break
 #define contarAte(y) for (int x = 0; x < y; x++)
 #define contarDe(y) for (int x = y; x > 0; x--)
-
+#define paraCada(colecao) \
+    for (const char** item = colecao; *item != NULL; item++)
+	
 //------------------Funções---------------------
 #define imprimir print
 #define imprimirLinha println
