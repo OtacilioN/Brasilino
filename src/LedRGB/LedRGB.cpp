@@ -4,7 +4,7 @@
  * Biblioteca para Módulo de escolha de cores de um led RGB de forma simplificada
  *
  * criado em 12/10 2025
- * por Joao Arthur (github: @jarthur-duarte)
+ * por Joao Arthur <https://github.com/jarthur-duarte>
  *
  * Distribuição livre por MIT License.
  */
