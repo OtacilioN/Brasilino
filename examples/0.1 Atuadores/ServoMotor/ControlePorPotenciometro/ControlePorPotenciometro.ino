@@ -1,6 +1,4 @@
 /* Controle por Potenciômetro
- por Erick Simões (2025) <https://github.com/ErickSimoes>
- Este exemplo de código está em domínio público.
 */
 
 #include <Brasilino.h>
@@ -19,4 +17,5 @@ funcao repetir() {
   valorPotenciometro = mapear(valorPotenciometro, 0, 1023, 0, 180); // Mapeia o valor para o intervalo do servo
   meuServo.escreverAngulo(valorPotenciometro); // Define o ângulo do servo
   esperar(0.1); // Espera 100 ms
+  
 }

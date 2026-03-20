@@ -1,12 +1,5 @@
 /*
-    quarentaedois
-    Programa exemplo que contém a respostam para a vida, o universo e tudo mais.
-    
-    Este exemplo de código está em domínio público.
-    
-    criado em 26 de fevereiro de 2016
-    Desenvolvido por Otacilio Neto.
-    
+    quarentaedois    
 */    
 
 // Dica: Você pode criar uma linha de comentário utilizando duas barras no inicio de uma linha
@@ -134,4 +127,5 @@ funcao repetir() {
         escreverSerialn("Ainda não recebi um C");
         esperar(0.5);
     }
+    
 }

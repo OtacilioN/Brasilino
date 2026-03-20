@@ -8,13 +8,6 @@
     * Led conectado ao pino 13.
     * Botao conectado ao pino 2 e alimentado com +5v.
     * Resistor de 10k conectado entre o gnd e o pino 2.
-        
-    Este exemplo de código está em domínio público.
-    
-    modificado em 10 de julho de 2016
-    Desenvolvido por Otacilio Neto e Thiago Augusto Martins.
-    Orientado pelo Prof. Dr. Rômulo Cesar Carvalho de Araújo.
-    
     Este exemplo é baseado no exemplo Button do Arduino.
 */ 
 
@@ -46,4 +39,5 @@ funcao repetir() {
     } senao { // Caso não esteja desliga o led
         desligar(led); // desliga o led
     }
+    
 }

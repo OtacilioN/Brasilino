@@ -4,13 +4,7 @@
     
     Utilize um Termistor NTC de 10k, alimentado com +5v e com um resistor de 10k entre o pino A0 e o gnd. 
     Assim: [GND] ---- [Resistor de 10k] -------[A0] ------- [Termistor] ---- [+5v]
-    
-    Este exemplo de código está em domínio público.
-    
-    modificado em 11 de julho de 2016
-    Desenvolvido por Otacilio Neto e Thiago Augusto Martins.
-    Orientado pelo Prof. Dr. Rômulo Cesar Carvalho de Araújo.
-    
+  
     Este exemplo é baseado no tutorial reading a Thermistor do Arduino Playground.
 */ 
 
@@ -43,4 +37,5 @@ funcao repetir() {
     escreverSerialn(" graus Celsius.");
     
     esperarMili(100); // Espera 100 Milissegundos
+    
 }
