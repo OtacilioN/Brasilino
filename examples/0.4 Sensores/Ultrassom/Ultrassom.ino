@@ -4,12 +4,6 @@
 
   Conecte o pino de Trig do sensor ao pino 8 do Arduino e o pino de Echo do sensor ao pino 9 do Arduino.
 
-  Este exemplo de código está em domínio público.
-
-  modificado em 22 de Setembro de 2025
-  Desenvolvido por Otacilio Neto e Thiago Augusto Martins.
-  Orientado pelo Prof. Dr. Rômulo Cesar Carvalho de Araújo.
-
   Este exemplo é baseado no exemplo UltrasonicSimple.ino da biblioteca Ultrasonic.h
 */
 
@@ -31,4 +25,5 @@ funcao repetir() {
   escreverSerial(distancia);
   escreverSerialn(" CM");
   esperar(1);
+  
 }

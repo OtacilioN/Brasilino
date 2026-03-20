@@ -3,13 +3,7 @@
     
     Este exemplo mostra como realizar o controle gradual de um led ligado ao pino 13
     usando a função escreverAnalogico.
-    
-    Este exemplo de código está em domínio público.
-    
-    modificado em 10 de julho de 2016
-    Desenvolvido por Otacilio Neto e Thiago Augusto Martins.
-    Orientado pelo Prof. Dr. Rômulo Cesar Carvalho de Araújo.
-    
+
     Este exemplo é baseado no exemplo Fade do Arduino.
 */ 
 
@@ -40,4 +34,5 @@ funcao repetir() {
         luminosidade--; // Diminui em uma unidade o valor da luminosidade
         esperarMili(30); // Espera 30 milissegundos
     }
+
 }

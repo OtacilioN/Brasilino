@@ -4,13 +4,7 @@
     
     Utilize um LDR de 10k, alimentado com +5v e com um resistor de 10k entre o pino A1 e o gnd. 
     Assim: [GND] ---- [Resistor de 10k] -------[A1] ------- [LDR] ---- [+5v]
-    
-    Este exemplo de código está em domínio público.
-    
-    modificado em 11 de julho de 2016
-    Desenvolvido por Otacilio Neto e Thiago Augusto Martins.
-    Orientado pelo Prof. Dr. Rômulo Cesar Carvalho de Araújo.
-    
+
 */ 
 
 #include <Brasilino.h>
@@ -39,4 +33,5 @@ funcao repetir() {
     escreverSerialn(luminosidadeAtual);
     
     esperarMili(100); // Espera 100 Milissegundos
+
 }

@@ -1,6 +1,5 @@
 /* Varredura
- por Erick Simões (2025) <https://github.com/ErickSimoes>
- Este exemplo de código está em domínio público.
+
 */
 
 #include <Brasilino.h>
@@ -30,4 +29,5 @@ funcao repetir() {
   }
 
   esperar(1); // Espera 1 segundo na posição inicial
+
 }
