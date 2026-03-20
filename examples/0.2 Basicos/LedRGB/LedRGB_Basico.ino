@@ -1,12 +1,6 @@
 /*
     LedRGB Básico
     Exibe as cores primárias em um LED RGB e depois uma cor personalizada.
-    
-    Este exemplo de código está em domínio público.
-    
-    Criado em 12 de outubro de 2025
-    Desenvolvido por Joao Arthur <https://github.com/jarthur-duarte>.
-    Faz parte da expansão do framework Brasilino.
 */
 // Inclui a biblioteca Brasilino.
 #include <Brasilino.h>
@@ -46,4 +40,5 @@ funcao repetir() {
     // 3. Desligando o LED
     meuLed.desligar();
     esperar(2); // Espera 2 segundos antes de recomeçar
+
 }

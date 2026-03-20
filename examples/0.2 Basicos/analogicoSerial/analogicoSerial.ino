@@ -4,13 +4,6 @@
     
     Conecte o pino central do potenciômetro ao pino Analógico 0, e os pinos de alimentação aos
     pinos +5V e GND.
-    
-    Este exemplo de código está em domínio público.
-    
-    modificado em 07 de julho de 2016
-    Desenvolvido por Otacilio Neto e Thiago Augusto Martins.
-    Orientado pelo Prof. Dr. Rômulo Cesar Carvalho de Araújo.
-    
     Este exemplo é baseado no exemplo AnalogReadSerial do Arduino.
 */    
 
@@ -30,4 +23,5 @@ funcao repetir() {
     // Escreve no SerialMonitor o valor armazenado na variável do tipo inteiro
     escreverSerialn(valorDoSensor); 
     esperar(0.5); // espera meio segundo
+    
 }

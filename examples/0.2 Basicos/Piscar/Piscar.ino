@@ -1,13 +1,6 @@
 /*
     Piscar
     Liga um LED por um segundo, depois desliga-o, repetidamente.
-    
-    Este exemplo de código está em domínio público.
-    
-    modificado em 07 de julho de 2016
-    Desenvolvido por Otacilio Neto e Thiago Augusto Martins.
-    Orientado pelo Prof. Dr. Rômulo Cesar Carvalho de Araújo.
-    
     Este exemplo é baseado no exemplo Blink do Arduino.
 */    
 
@@ -26,4 +19,5 @@ funcao repetir() {
     esperar(1);     // Espera por um segundo
     desligar(13);   // Desliga o led contectado ao pino 13
     esperar(1);     // Espera um segundo
+
 }

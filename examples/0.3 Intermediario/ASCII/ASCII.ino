@@ -8,13 +8,6 @@
 
   Não necessita circuito ou hardware adicional.
 
-  Codado em Brasilino em outubro de 2019
-  por Ladson Gomes (github.com/ladsong)
-  Baseado no código de exemplo da biblioteca arduino
-  por Nicholas Zambetti <http://www.zambetti.com>
-  Adaptado para comando escreverSerialEspecial() e escreverSerialnEspecial()
-  por Steffano Pereira (github.com/steffanop)
-
 */
 #include <Brasilino.h>
 
@@ -71,4 +64,5 @@ funcao repetir() {
   }
   // avança para o proximo caracter
   esteByte++;
+  
 }
