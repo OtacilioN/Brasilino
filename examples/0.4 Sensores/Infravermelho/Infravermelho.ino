@@ -30,9 +30,9 @@ funcao repetir() {
     // Analisa o valor lido e emite uma opinião com base no limite definido
     // (Geralmente, sensores IV mudam drasticamente o valor entre superfícies claras e escuras)
     se (leituraAtual < limiteReflexao) {
-        escreverSerial("Objeto Proximo e/ou Superficie Clara: ");
+        escreverSerial("Muita luz refletida: ");
     } senao {
-        escreverSerial("Objeto Afastado e/ou Superficie Escura: ");
+        escreverSerial("Pouca luz refletida: ");
     }
 
     // Imprime no Monitor Serial o valor numérico atual
