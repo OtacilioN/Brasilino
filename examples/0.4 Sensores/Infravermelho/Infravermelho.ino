@@ -1,10 +1,11 @@
 /*
     Infravermelho
     Lê o valor analógico obtido por um sensor de reflexão infravermelho (como o TCRT5000), 
-    mostra o resultado no monitor serial e identifica se há um obstáculo ou linha preta.
+    mostra o resultado no monitor serial e classifica a quantidade de luz refletida.
     
-    Conecte o pino de sinal analógico (AO) do sensor ao pino A0 do Arduino.
-    Alimente o sensor com +5V e GND.
+    Obs.: Alguns módulos invertem a leitura; se necessário, ajuste o limite e/ou inverta a comparação.
+    
+    Conecte o pino de sinal analógico (AO) do sensor ao pino A0 do Arduino. Alimente o sensor com +5V e GND.
 */
 
 #include <Brasilino.h>
