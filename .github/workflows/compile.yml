@@ -60,6 +60,8 @@ jobs:
           
           - boards: micronucleus-franzininho
             arduino-platform: "digistump:avr"
+            # Pinado em commit para evitar quebra do CI por mudanças de branch/default no repositório externo.
+            # Atualizar este SHA quando houver necessidade explícita de atualizar o índice Digistump.
             flag-additional-urls: "--additional-urls https://raw.githubusercontent.com/digistump/arduino-boards-index/f914873fb56062b4fcf70ac43fcd973db0323a1d/package_digistump_index.json"
             fqbn: "digistump:avr:digispark-tiny"
             flag-programmer: "--programmer micronucleus"
