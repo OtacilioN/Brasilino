@@ -24,8 +24,10 @@
 
 #include "LedRGB/LedRGB.h" // Biblioteca LedRGB de João Arthur
 
-#ifndef Servo_h
-#include <Servo.h>
+#if defined(__has_include)
+  #if __has_include(<Servo.h>)
+    #include <Servo.h>
+  #endif
 #endif
 
 // ------------------Constantes---------------------

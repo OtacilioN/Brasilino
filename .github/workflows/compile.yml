@@ -60,7 +60,7 @@ jobs:
           
           - boards: micronucleus-franzininho
             arduino-platform: "digistump:avr"
-            flag-additional-urls: "--additional-urls http://digistump.com/package_digistump_index.json"
+            flag-additional-urls: "--additional-urls https://raw.githubusercontent.com/digistump/arduino-boards-index/master/package_digistump_index.json"
             fqbn: "digistump:avr:digispark-tiny"
             flag-programmer: "--programmer micronucleus"
             serial-enabled: false
